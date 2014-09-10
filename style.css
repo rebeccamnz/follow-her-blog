@@ -12,6 +12,13 @@ body {
 }
 
 
+nav { 
+	list-style-type: none;
+ 	margin: 20px 0;	
+ 	
+}
+
+
 /* body ****************************************/
 
 
@@ -24,10 +31,9 @@ body {
 
 .rounded {
 	width: 80px;
-	margin: auto;
 	display: block;
 	border-radius: 50%;
-	border: 2px solid;
+	border: 2px solid #F6B025;;
 }
 
 .rounded:hover {
@@ -40,17 +46,14 @@ body {
 /* header ***************************************/
 
 header {
-	font-family: "Dosis", sans-serif;
-	font-size: 26px;
-	border-top: 1px solid rgb(246, 176, 37);
+	background:#88D8C5;
 }
 
 #logo { 
-	width: 150px;
+	width: 100px;
 	margin-top: 20px;
-	margin-bottom: 20px;
-	border-radius: 50%;
-	border: 2px solid #F6B025;
+	margin: 15px 15px;
+	border: 1px solid #F6B025;
 }
 
 nav { 
@@ -60,35 +63,26 @@ nav {
 }
 
 .main-navbar {
-	width: 300px;
+	width: 700px;
 	line-height: 50px;
 	padding-left: 120px;
-}
-
-
-.menu {
-	display: inline;
 	text-decoration: none;
-	color: #F6B025; 
+	text-decoration: none;
+	color: #F3F4F3; 
 	font-size: 16px;
 	margin-right: 18px;
-
+	font-family: "Dosis", sans-serif;
 }
 
-#sublogo{
-	font-size: 24px;
-	color: #88D8C5;
-	width: 400px;
+.main-navbar li {
+	padding-left: 40px;
+	display: inline;
 }
+
+
 
 .inline{
 	display: inline-block;
-	/*width:400px;*/
-	/*margin: auto;*/
-}
-
-.simple li {
-	display: block;
 }
 
 .left{
@@ -98,11 +92,17 @@ nav {
 
 /* repere ***************************************/
 
+#separation {background: #white;
+	height : 10px;
+}
+
+
+
 .repere {
 	
 	padding-right: 10px;
 	font-weight: bold;
-	background: #88D8C5;
+	background: #F6B025;
 }
 
 .white {
@@ -114,11 +114,42 @@ nav {
 	text-decoration: none; 
 	font-size: 12px;
 	margin-right:10px;
+}
 
+.taille{
+	font-size: 12px;
 }
 
 #space{
 	margin-left: 20px
 }
 
+
 /* h1 ***************************************/
+
+.blanc {background: #white;
+	height : 24px;
+}
+
+.accueil{
+	background-image: url("images/women.jpg");
+	height:551px;
+	
+}
+
+.home_page_title {
+	font-family: "Dosis", sans-serif;
+	font-size: 40px;
+	font-weight:bold;
+	text-align:center;
+	color: #F6B025;
+	border-top: 1px solid #88D8C5;
+}
+
+.pastille {
+	width: 150px;
+	margin: 150px 120px;
+	border-radius: 50%;
+	border: 3px solid #F6B025;
+
+}
