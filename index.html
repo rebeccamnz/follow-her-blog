@@ -4,50 +4,52 @@
 	<title>Follow'Her : Les femmes et le digital </title>
 	<meta charset="utf-8">
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  	<link href='http://fonts.googleapis.com/css?family=Dosis:500' rel='stylesheet' type='text/css'>
+  	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+  	<link type="text/css" href="style.css" rel="stylesheet">
 </head>
 
 
 <body>
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "http://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<!-- pour le plug-in Facebook, à re-vérifier quand le site est en ligne -->
+<div class="wrapped">
 
 <header> 
-	<a href=#> <img src="images/logo.png" alt="Follow'Her Logo" /> </a>
-	<p> Les nouvelles technologies pour l'émancipaition des femmes, dans les pays en développement </p>
-</header>
-
-<nav> 
-      <ul>
-        <li>Le Projet Follow'Her</li>
-        <li>Notre étude</li>
-        <li>Les femmes et le digital</li>
-        <li>Carnet de voyages</li>
+	<div class="inline">
+		<a  href="#"><img id="logo" src="images/logo.png" class="inline" alt="Follow'Her Logo" /> </a>
+		<h1 id="sublogo" class="inline"> Les nouvelles technologies pour l'émancipation des femmes, dans les pays en développement </h1>
+	</div>
+	<nav class="inline main-navbar"> 
+      <ul class="simple">
+        <a href=#><li class="menu">Le Projet Follow'Her</li></a>
+        <a href=#><li class="menu">Notre étude</li></a>
+        <a href=#><li class="menu">Les femmes et le digital</li></a>
+        <a href=#><li class="menu">Carnet de voyages</li></a>
       </ul>
-</nav>
+	</nav>
+</header>
+<!-- je n'arrive pas à mettre les blocs comme je le veux-->
 
-<section>
-	<ul>
-		<li> <a href=#> <p class="fa fa-map-marker fa-2x">Où sommes-nous ?</p> </a> </li>
+
+<div class="repere">
+	<a class="inline" id="space"href=#><p class="fa fa-map-marker white"> Où sommes-nous ?</p> </a>
+	<div class="inline" style="width:630px"></div>
 <!-- redirige vers une page Google Map où je me géolocalise-->
-		<li> <a href="http://www.facebook.com/projet.followher" target="_blank"> <i class="fa fa-facebook fa-2x"></i> </a> </li>
-		<li> <a href="https://twitter.com/projetfollowher" target="_blank"> <i class="fa fa-twitter fa-2x"></i> </a></li>
-		<li><a href=#> <i class="fa fa-envelope-o fa-2x"></i> </a></li>
+	<ul class ="inline">
+		<li class="sousmenu"><a href="http://www.facebook.com/projet.followher" target="_blank"> <i class="fa fa-facebook white"></i> </a> </li>
+		<li class="sousmenu"><a href="https://twitter.com/projetfollowher" target="_blank"> <i class="fa fa-twitter white"></i> </a></li>
+		<li class="sousmenu"><a href=#> <i class="fa fa-envelope-o white"></i> </a></li>
 <!-- permet d'envoyer un mail et penser à mettre en forme dans CSS : bouton rond avec fond coloré-->
-		<li>FR</li>
-		<li>ANG</li>
+		<li class="sousmenu white">FR</li>
+		<li class="sousmenu white">ANG</li>
 	</ul>
-</section>
-<!-- faut-il faire deux sections ? car je voudrais que le premier lien soit à gauche, et les rtois autres à droite>
+</div>
+<!-- comment mettre les li tout à droite-->
 
-<!-- Ajouter unparagraphe h1 avec la vidéo dès que celle-ci est prête-->
+<h1>Follow'Her</h1>
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/BKtrWU4zaaI?rel=0" frameborder="0" allowfullscreen></iframe>
+
 
 <h1>Qui est Follow'Her ?</h1>
 	
@@ -86,24 +88,24 @@
 
 	<h2>Notre vision</h2>
 	<p>Nous sommes 5 étudiantes d'HEC Paris, sensibles au problème de l'exclusion économique des femmes dans les pays en développement</p>
-	<p>Parce que les nouvelles technologies permettent de diffuser massivement l'information et qu'elles constituent un outil puissant de collaboration économique et sociale, <!-- help pour faire une class dans un texte--> nous voulons nous engager pour qu'elles soient le vecteur d'une économie inclusive des femmes</p>
+	<p>Parce que les nouvelles technologies permettent de diffuser massivement l'information et qu'elles constituent un outil puissant de collaboration économique et sociale, <!-- faire une class dans un texte--> nous voulons nous engager pour qu'elles soient le vecteur d'une économie inclusive des femmes</p>
 
 	<h2>Notre mission</h2>
 	<ul>
 		<li>Pendant 8 mois, nous allons promouvoir l’usage de ces technologies, en analysant sur le terrain, l’impact de plusieurs projets qui les mettent en œuvre, et en apportant un soutien opérationnel.</li>
 		<li>Nous avons sélectionné des projets permettant aux femmes de s’émanciper par différents leviers comme l'éducation, la formation, l’accès aux financements ou à l’emploi.</li>
-		<li> Notre objectif final est de valoriser ces pratiques innovantes sur notre site internet, d’identifier d’éventuelles stratégies de réplication et de déterminer les possibilités d’amélioration et de développement.</li>
+		<li>Notre objectif final est de valoriser ces pratiques innovantes sur notre site internet, d’identifier d’éventuelles stratégies de réplication et de déterminer les possibilités d’amélioration et de développement.</li>
 	</ul>
 
-<h1> Live </h1>
+<h1>Live</h1>
 	
-	<!-- Lien versles deux articles publiés les plus récemment-->
-<div class="fb-activity" data-site="developers.facebook.com" data-action="likes, recommends" data-colorscheme="light" data-header="true"></div>
+<!-- Lien versles deux articles publiés les plus récemment-->
 <!-- pour le plug-in Facebook, à re-vérifier quand le site est en ligne -->
 
 <h1>Nos Partenaires</h1>
 	<a href="http://galeriekeza.com"> <img src:"images/Keza.jpg" alt="Galerie Keza"> </a>
 	<a href="http://http://www.scheffer.fr/"> <img src:"images/Scheffer.gif" alt="Scheffer"> </a>
 
+</div>
 </body>
 </html>

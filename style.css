@@ -1,0 +1,124 @@
+/************************************************/
+/*************     INITIALIZE      **************/
+/***********************************************/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* body ****************************************/
+
+
+.wrapped {
+  width: 1000px;
+  margin: auto;
+  background-color: white;
+  padding: 20px 50px;
+}
+
+.rounded {
+	width: 80px;
+	margin: auto;
+	display: block;
+	border-radius: 50%;
+	border: 2px solid;
+}
+
+.rounded:hover {
+  opacity: 0.5;
+  }
+
+
+
+
+/* header ***************************************/
+
+header {
+	font-family: "Dosis", sans-serif;
+	font-size: 26px;
+	border-top: 1px solid rgb(246, 176, 37);
+}
+
+#logo { 
+	width: 150px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 50%;
+	border: 2px solid #F6B025;
+}
+
+nav { 
+	list-style-type: none;
+ 	margin: 20px 0;	
+ 	
+}
+
+.main-navbar {
+	width: 300px;
+	line-height: 50px;
+	padding-left: 120px;
+}
+
+
+.menu {
+	display: inline;
+	text-decoration: none;
+	color: #F6B025; 
+	font-size: 16px;
+	margin-right: 18px;
+
+}
+
+#sublogo{
+	font-size: 24px;
+	color: #88D8C5;
+	width: 400px;
+}
+
+.inline{
+	display: inline-block;
+	/*width:400px;*/
+	/*margin: auto;*/
+}
+
+.simple li {
+	display: block;
+}
+
+.left{
+	width:200px;
+}
+.right{width:600px;}
+
+/* repere ***************************************/
+
+.repere {
+	
+	padding-right: 10px;
+	font-weight: bold;
+	background: #88D8C5;
+}
+
+.white {
+	color:#F3F4F3;
+}
+
+.sousmenu{
+	display: inline;
+	text-decoration: none; 
+	font-size: 12px;
+	margin-right:10px;
+
+}
+
+#space{
+	margin-left: 20px
+}
+
+/* h1 ***************************************/
