@@ -56,10 +56,14 @@ nav ul {list-style-type: none;}
 /***********************************************/
 
 .background_green {
-	background-image: url("images/women.jpg");
+	background:
+	radial-gradient(
+		rgba(255,255,255,0.5),
+		rgba(255,255,255, 0.5)
+		),
+	url("images/women.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	opacity:0.5;
 	height:500px;
 }
 
