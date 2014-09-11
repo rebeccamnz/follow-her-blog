@@ -120,6 +120,13 @@ nav ul {list-style-type: none;}
 	text-align: center;
 }
 
+
+@media (max-width: 320px) {  /*small mobile*/
+  .iframe {
+    width: 300px;
+  }
+}
+
 /* équipe ***************************************/
 
 .equipe_followher{
@@ -127,14 +134,16 @@ nav ul {list-style-type: none;}
 	background-size: cover;
 	background-repeat: no-repeat;
 	color:black;
-	height:700px;
+	height:800px;
 }
 
-.passion{list-style-type: none;}
+.passion{list-style-type: none;
+margin-top: 10px;
+}
 
 .presentation_equipe{
 	font-family: 'PT Sans Narrow', sans-serif;
-	margin: 50px;
+	margin-top: 30px;
 }
 
 .intro{
@@ -176,9 +185,16 @@ nav ul {list-style-type: none;}
 
 .bordure {
 	border: 1px solid #F6B025;
-	border-radius: 30%;
-	width: 35%;
-	margin-left: 130px;
+}
+
+@media (max-width: 320px) {  /*small mobile*/
+  .bordure {
+    font-size:12px;
+  }
+}
+
+.prez{
+	margin-top: 30px;
 }
 
 /* live ***************************************/
@@ -193,6 +209,10 @@ nav ul {list-style-type: none;}
 	background-size: cover;
 	background-repeat: no-repeat;
 	color:black;
+}
+
+.article_recent {
+	border: 1px solid black;
 }
 
 
@@ -223,7 +243,6 @@ nav ul {list-style-type: none;}
 
 .repere {	
 	font-weight: bold;
-	background: #F6B025;
 	clear:both;
 	position:fixed;
 	bottom:0;
@@ -255,4 +274,13 @@ nav ul {list-style-type: none;}
 
 .orange_clair{color:#F5C159;}
 
-.logopart{margin: 60px 60px 60px 100px;}
+/*.logopart{margin: 60px 60px 60px 100px;}*/
+.logopart{
+	margin-top: 80px;
+}
+
+@media (max-width: 320px) {  /*small mobile*/
+  .logopart img {
+    width:80%;
+  }
+}
