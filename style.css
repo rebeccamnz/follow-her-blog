@@ -9,6 +9,16 @@ a {
 body {
   margin: 0;
   padding: 0;
+  background-color: #F3F4F3;
+}
+
+div {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 auto;
 }
 
 
@@ -18,22 +28,20 @@ nav {
  	
 }
 
+nav ul {list-style-type: none;}
 
-/* body ****************************************/
+/************************************************/
+/*************     BODY      **************/
+/***********************************************/
 
 
-.wrapped {
-  width: 1000px;
-  margin: auto;
-  background-color: white;
-  padding: 20px 50px;
-}
 
 .rounded {
 	width: 80px;
 	display: block;
 	border-radius: 50%;
-	border: 2px solid #F6B025;;
+	border: 2px solid #F6B025;
+	margin: auto;
 }
 
 .rounded:hover {
@@ -43,113 +51,208 @@ nav {
 
 
 
-/* header ***************************************/
+/************************************************/
+/*************     HEADER      **************/
+/***********************************************/
 
-header {
-	background:#88D8C5;
+.background_green {
+	background-image: url("images/women.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity:0.5;
+	height:500px;
 }
 
-#logo { 
-	width: 100px;
-	margin-top: 20px;
-	margin: 15px 15px;
-	border: 1px solid #F6B025;
-}
+.pastille {
+	width: 160px;
+	margin: 20px 80px;
+	border-radius: 50%;
+	border: 3px solid #F6B025;
 
-nav { 
-	list-style-type: none;
- 	margin: 20px 0;	
- 	
 }
+#vert
+{color: #88D8C5;}
 
-.main-navbar {
+
+.barnav {
+	border: 2px solid black;
 	width: 700px;
-	line-height: 50px;
-	padding-left: 120px;
-	text-decoration: none;
-	text-decoration: none;
-	color: #F3F4F3; 
-	font-size: 16px;
-	margin-right: 18px;
+	height: 100px;
+	line-height: 60px;
+	margin: 40px;
+}
+
+/* h1 ***************************************/
+
+.blanc {
+	background: #white;
+	height : 12px;
+}
+
+
+.home_page_title {
 	font-family: "Dosis", sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	color: #F6B025;
+	line-height: 100px;
 }
 
-.main-navbar li {
-	padding-left: 40px;
-	display: inline;
+
+
+/* video ***************************************/
+.video_followher{
+	background:
+	radial-gradient(
+		rgba(255,255,255,0.5),
+		rgba(255,255,255, 0.5)
+		),
+	url("images/youtube.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*opacity:0.5;*/
+	height:513px;	
+}
+
+.video{
+	margin:auto;
+	text-align: center;
+}
+
+/* équipe ***************************************/
+
+.equipe_followher{
+	background-image: url("images/equipe.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color:black;
+	height:700px;
+}
+
+.passion{list-style-type: none;}
+
+.presentation_equipe{
+	font-family: 'PT Sans Narrow', sans-serif;
+	margin: 50px;
+}
+
+.intro{
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 24px;
+	color: #454545;
+	text-align: center;
+
+}
+
+.titre_vert{
+	font-family: "Dosis", sans-serif;
+	font-size: 22px;
+	color: #88D8C5;
+	font-weight: bold;
+	padding-left: 20px;
+}
+
+.prenom_vert{
+	font-family: "Dosis", sans-serif;
+	font-size: 18px;
+	color: #88D8C5;
+	font-weight: bold;
+	text-align: center;
+}
+.prenom_gris{
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 14px;
+	color: #454545;
+	text-align: justify;
+
+}
+
+.corps_gris {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 16px;
+	color: #454545;
+}
+
+.bordure {
+	border: 1px solid #F6B025;
+	border-radius: 30%;
+	width: 35%;
+	margin-left: 130px;
+}
+
+/* live ***************************************/
+
+.live{
+	background:
+	radial-gradient(
+		rgba(255,255,255,0.5),
+		rgba(255,255,255, 0.5)
+		),
+	url("images/live.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color:black;
 }
 
 
+/*partenaires ***************************************/
 
-.inline{
-	display: inline-block;
+.partenaires{
+	background:
+	radial-gradient(
+		rgba(255,255,255,0.5),
+		rgba(255,255,255, 0.5)
+		),
+	url("images/partenaires.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color:black;
+	height:600px;
 }
 
-.left{
-	width:200px;
-}
-.right{width:600px;}
 
-/* repere ***************************************/
+/************************************************/
+/*************     Footer      **************/
+/***********************************************/
+
 
 #separation {background: #white;
 	height : 10px;
 }
 
-
-
-.repere {
-	
-	padding-right: 10px;
+.repere {	
 	font-weight: bold;
 	background: #F6B025;
+	clear:both;
+	position:fixed;
+	bottom:0;
+	width:100%;
 }
 
 .white {
 	color:#F3F4F3;
 }
 
+.centre {
+	padding-top: 10px;
+}
+
 .sousmenu{
-	display: inline;
+	display: inline-block;
 	text-decoration: none; 
 	font-size: 12px;
-	margin-right:10px;
+	margin-right:20px;
 }
 
 .taille{
-	font-size: 12px;
+	font-size: 14px;
 }
 
 #space{
-	margin-left: 20px
+	margin-left: 40px
 }
 
+.orange_clair{color:#F5C159;}
 
-/* h1 ***************************************/
-
-.blanc {background: #white;
-	height : 24px;
-}
-
-.accueil{
-	background-image: url("images/women.jpg");
-	height:551px;
-	
-}
-
-.home_page_title {
-	font-family: "Dosis", sans-serif;
-	font-size: 40px;
-	font-weight:bold;
-	text-align:center;
-	color: #F6B025;
-	border-top: 1px solid #88D8C5;
-}
-
-.pastille {
-	width: 150px;
-	margin: 150px 120px;
-	border-radius: 50%;
-	border: 3px solid #F6B025;
-
-}
+.logopart{margin: 60px 60px 60px 100px;}
