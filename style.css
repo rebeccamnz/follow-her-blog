@@ -68,22 +68,59 @@ nav ul {list-style-type: none;}
 }
 
 .pastille {
-	width: 160px;
-	margin: 20px 80px;
+	width: 100%;
+	height: 100%;
 	border-radius: 50%;
-	border: 3px solid #F6B025;
-
 }
+
+
+.parent {
+	height: 160px;
+	width: 160px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: auto;
+	position: relative;
+	border: 3px solid #F6B025;
+	margin: auto;
+}
+
+.hidden_message{
+	display: none;
+	background-color: #F6B025;
+	opacity: 0.8;
+	position: absolute;
+	height: 100%;
+	border-radius: 50%;
+	margin: auto;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: white;
+}
+
+.hidden_message p {
+	margin-top: 46%;
+	text-align: center;
+}
+
+.parent:hover .hidden_message{
+	display: block;
+}
+
+
+
+
+
 #vert
 {color: #88D8C5;}
 
-
 .barnav {
 	border: 2px solid black;
-	width: 700px;
-	height: 100px;
-	line-height: 60px;
-	margin: 40px;
+	/*width: 700px;*/
+	/*height: 100px;*/
+	/*line-height: 60px;*/
+	/*margin: 40px;*/
 }
 
 /* h1 ***************************************/
@@ -93,7 +130,6 @@ nav ul {list-style-type: none;}
 	height : 12px;
 }
 
-
 .home_page_title {
 	font-family: "Dosis", sans-serif;
 	font-size: 40px;
@@ -102,7 +138,6 @@ nav ul {list-style-type: none;}
 	color: #F6B025;
 	line-height: 100px;
 }
-
 
 
 /* video ***************************************/
@@ -123,7 +158,6 @@ nav ul {list-style-type: none;}
 	margin:auto;
 	text-align: center;
 }
-
 
 @media (max-width: 320px) {  /*small mobile*/
   .iframe {
@@ -201,6 +235,38 @@ margin-top: 10px;
 	margin-top: 30px;
 }
 
+
+.parent2 {
+	width: 80px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: auto;
+	position: relative;
+}
+.hidden_message2{
+	display:none;
+	background-color: #F6B025 ;
+	opacity: 0.8;
+	position: absolute;
+	height: 100%;
+	border-radius: 50%;
+	margin:auto;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: white;
+}
+
+.hidden_message2 p {
+	margin-top: 40px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.parent2:hover .hidden_message2{
+	display: block;
+}
+
 /* live ***************************************/
 
 .live{
@@ -264,8 +330,31 @@ margin-top: 10px;
 .sousmenu{
 	display: inline-block;
 	text-decoration: none; 
-	font-size: 12px;
+	font-size: 14px;
 	margin-right:20px;
+	border-right: 1px solid white;
+}
+
+.sousmenu:hover {
+	display: inline-block;
+	text-decoration: none; 
+	font-size: 18px;
+	margin-right:20px;
+	border: 1px solid white;
+	background-color: #F5C159;
+	opacity: 0,2;
+	margin-bottom: 15px;
+}
+
+#click:hover{
+	display: inline-block;
+	text-decoration: none; 
+	font-size: 18px;
+	margin-right:20px;
+	border: 1px solid white;
+	background-color: #F5C159;
+	opacity: 0,2;
+	margin-bottom: 15px;
 }
 
 .taille{
