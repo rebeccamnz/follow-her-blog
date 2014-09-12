@@ -30,17 +30,18 @@
 
 <body>
 
-<div class="container-fluid">
-<header class="row">
+<!-- <div class="container-fluid"> <-->
+<header>
 
-    <div class="col-xs-2 parent">
+    <div id="welcome">
     	<img src="images/logo.png" alt="Follow'Her Logo" class="pastille"/>
     	<div class="hidden_message">
 			<p class="home">HOME</p> 
 		</div>
     </div>
     
- 	<div class="col-xs-6">   	
+
+ 	<div>   	
     	<!-- NAVBAR -->
 
 		<nav class="navbar navbar-default navbar-transparent" role="navigation">
@@ -69,7 +70,7 @@
 	</div>
 
 	<!-- REPERE -->
-	<div class="col-xs-4">
+	<div class="contacter">
 
     	<ul class ="list-inline text-right orange_clair">
 			<li class="sousmenu"><a href="#" target="_blank"><i class="centre fa fa-map-marker white"></i></a></li>
@@ -78,15 +79,21 @@
 			<li class="sousmenu"><a href="https://twitter.com/projetfollowher" target="_blank"> <i class="fa fa-twitter"></i> </a></li>
 			<li class="sousmenu"><a href=#> <i class="fa fa-envelope-o"></i> </a></li>
 					<!-- permet d'envoyer un mail -->
-			<li class="sousmenu">FR</li>
-			<li class="sousmenu">ANG</li>
+			<li class="dropdown">
+          		<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cog sousmenu"></i><span class="caret"></span></a>
+          		<ul class="dropdown-menu" role="menu">
+           		 <li class="sousmenu"><a href="#">ANG</a></li>
+           		 <li class="sousmenu"><a href="#">FR</a></li>
+         		 </ul>
+        	</li>
 		</ul>
 
 	</div>
 
 
 </header>
-</div>
+
+
 
 <div class="container-fluid">
 <!-- <div class="row repere">
@@ -97,11 +104,12 @@
 </div> -->
 
 <div class="background_green">
-<img src="images/logo.png" alt="Follow'Her Logo" class="pastille_logo"/>
+<img src="images/mobile_woman.jpg" />
+<div class="mask"> </div>
 </div>
 
 <div class="video_followher logo_fh"> 
-	<div class="video"> <iframe width="560" height="315" src="//www.youtube.com/embed/BKtrWU4zaaI?rel=0" frameborder="0" allowfullscreen></iframe> </div>
+<iframe width="50%" height="" src="//www.youtube.com/embed/BKtrWU4zaaI?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
 
@@ -120,7 +128,7 @@
 				<img class="rounded img-responsive"src="images/Hélène.png" alt="Hélène Follow'Her"/>
 				<div class="hidden_message2">
 					<p>
-					Hélène
+					LENI
 					</p>
 				</div>
 			</div>
@@ -138,7 +146,7 @@
 				<img class="rounded img-responsive"src="images/Juliette.png" alt="Juliette Follow'Her"/>
 				<div class="hidden_message2">
 					<p>
-					Juliette
+					FILI
 					</p>
 				</div>
 			</div> 
@@ -156,7 +164,7 @@
 				<img class="rounded img-responsive"src="images/Rebecca.png" alt="Rebecca Follow'Her"/>
 				<div class="hidden_message2">
 					<p>
-					Rebecca
+					BEX
 					</p>
 				</div>
 			</div> 
@@ -174,7 +182,7 @@
 				<img class="rounded img-responsive"src="images/Emmanuelle.png" alt="Emmanuelle Follow'Her"/>
 				<div class="hidden_message2">
 					<p>
-					Emmanuelle
+					MANUE
 					</p>
 				</div>
 			</div> 
@@ -192,7 +200,7 @@
 				<img class="rounded img-responsive"src="images/Charlotte.png" alt="Charlotte Follow'Her"/>
 				<div class="hidden_message2">
 					<p>
-					Charlotte
+					FANON
 					</p>
 				</div>
 			</div> 
@@ -234,13 +242,13 @@
 		<div class="col-md-3 col-md-offset-1">
 			<img src="images/ex1.jpeg" class="roundedbig"/>
 			<h3 class="titre_vert text-center"> Titre de l'article </h3>
-			<p class="corps_gris"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+			<p class="corps_gris text-justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 		</div>
 		
 		<div class="col-md-3 col-md-offset-1">
 			<img src="images/ex2.jpg" class="roundedbig"/>
 			<h3 class="titre_vert text-center"> Titre de l'article </h3>
-			<p class="corps_gris"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+			<p class="corps_gris text-justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 		</div>
 
 		<div class="col-md-4 hidden-sm">
@@ -295,6 +303,11 @@
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="global.js"></script>
 
 </body>
 </html>
