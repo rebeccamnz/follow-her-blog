@@ -9,7 +9,7 @@ a {
 body {
   margin: 0;
   padding: 0;
-  background-color: #F3F4F3;
+  background-color: RGB(240,237,229);
 }
 
 div {
@@ -30,6 +30,8 @@ nav {
 
 nav ul {list-style-type: none;}
 
+
+
 /************************************************/
 /*************     BODY      **************/
 /***********************************************/
@@ -37,7 +39,7 @@ nav ul {list-style-type: none;}
 
 
 .rounded {
-	width: 80px;
+	width: 100px;
 	display: block;
 	border-radius: 50%;
 	border: 2px solid #F6B025;
@@ -45,6 +47,18 @@ nav ul {list-style-type: none;}
 }
 
 .rounded:hover {
+  opacity: 0.5;
+  }
+
+.roundedbig {
+	width: 150px;
+	display: block;
+	border-radius: 50%;
+	border: 2px solid #F6B025;
+	margin: auto;
+}
+
+.roundedbig:hover {
   opacity: 0.5;
   }
 
@@ -58,27 +72,40 @@ nav ul {list-style-type: none;}
 .background_green {
 	background:
 	radial-gradient(
-		rgba(255,255,255,0.5),
-		rgba(255,255,255, 0.5)
+		rgba(13,13,12,0.5),
+		rgba(13,13,12, 0.5)
 		),
-	url("images/women.jpg");
+	url("images/mobile_woman.jpg");
+	
 	background-size: cover;
 	background-repeat: no-repeat;
-	height:500px;
+	height:600px;
+} 
+
+.pastille_logo {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .pastille {
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 
 .parent {
-	height: 160px;
-	width: 160px;
-	border-radius: 50%;
+	height: 140px;
+	width: 140px;
 	overflow: hidden;
+	border-radius: 50%;
 	margin: auto;
 	position: relative;
 	border: 3px solid #F6B025;
@@ -90,14 +117,20 @@ nav ul {list-style-type: none;}
 	background-color: #F6B025;
 	opacity: 0.8;
 	position: absolute;
-	height: 100%;
 	border-radius: 50%;
+	height: 100%;
 	margin: auto;
 	top: 0;
 	left: 0;
 	width: 100%;
 	color: white;
+	font-size: 20px;
+	font-family: "Dosis", sans-serif;
+	font-weight: bold;
 }
+
+
+
 
 .hidden_message p {
 	margin-top: 46%;
@@ -115,13 +148,147 @@ nav ul {list-style-type: none;}
 #vert
 {color: #88D8C5;}
 
-.barnav {
-	border: 2px solid black;
-	/*width: 700px;*/
-	/*height: 100px;*/
-	/*line-height: 60px;*/
-	/*margin: 40px;*/
+header {
+	font-weight: bold;
+	clear:both;
+	position:fixed;
+	top:0;
+	width:100%;
+	background-color: #F5C159;
+	height: 70px;
+	z-index: 1;
 }
+
+/****** OVERRIDE NAVBAR *******************/
+
+.navbar-transparent {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-transparent .navbar-brand,
+.navbar-transparent .navbar-nav > li > a {
+  color: #eeeeee;
+}
+
+.navbar-transparent .navbar-nav > li > a:hover,
+.navbar-transparent .navbar-nav > li > a:active,
+.navbar-transparent .navbar-nav > li > a:focus,
+.navbar-transparent .navbar-nav > .open > a,
+.navbar-transparent .navbar-nav > .open > a:hover,
+.navbar-transparent .navbar-nav > .open > a:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-transparent .navbar-brand:hover,
+.navbar-transparent .navbar-brand:active,
+.navbar-transparent .navbar-brand:focus {
+  color: white;
+}
+
+.navbar-default {
+/* background-color: #f8f8f8; */
+ border-color: transparent;
+}
+
+.navbar li {
+	color: #F3F4F3; 
+	font-size: 16px;
+	font-family: "Dosis", sans-serif;
+	font-weight: bold;
+}
+
+.navbar {
+	line-height: 50px;
+}
+
+.navbar li:hover {
+	color:black;
+}
+
+.navbar-nav li {
+	border-radius: 5px;
+}
+
+/************************************************/
+/*************     Repère     **************/
+/***********************************************/
+
+
+
+.repere {	
+	font-weight: bold;
+	background-color: #F5C159;
+	/*opacity: 0,8;*/
+	/*clear:both;
+	position:fixed;
+	bottom:0;
+	width:100%;*/
+	margin-top:60px;
+}
+
+
+
+.centre {
+	padding-top: 10px;
+}
+
+.sousmenu{
+	border: 1px solid transparent;
+	/*display: inline-block;*/
+	text-decoration: none; 
+	margin-right:20px;
+	/*border-right: 1px solid white;*/
+	color:white;
+	font-weight: bold;
+	/*font-size: 14px;*/
+	font-size: 1.5rem;
+	transition: font-size 0.5s ease;
+}
+
+body > div:nth-child(1) > header > div.col-xs-4 > ul > li{
+	margin: 10px 10px;
+	/*font-size: 14px;*/
+
+	line-height: 2rem;
+
+}
+
+
+.sousmenu:hover {
+	/*display: inline-block;*/
+	text-decoration: none; 
+	font-size: 2,5rem;
+	/*font-size: 18px;*/
+	margin-right: 20px;
+	/*border: 1px solid white;*/
+	background-color: #F5C159;
+	opacity: 0,5;
+	margin-bottom: 15px;
+	color: white;
+}
+
+.sousmenu a:hoover {
+	color: white;
+}
+
+#space{
+	margin-left: 40px
+}
+
+.orange_clair{color:#F5C159;}
+
+/*.logopart{margin: 60px 60px 60px 100px;}*/
+.logopart{
+	margin-top: 80px;
+}
+
+@media (max-width: 320px) {  /*small mobile*/
+  .logopart img {
+    width:80%;
+  }
+}
+
 
 /* h1 ***************************************/
 
@@ -141,22 +308,17 @@ nav ul {list-style-type: none;}
 
 
 /* video ***************************************/
+
 .video_followher{
-	background:
-	radial-gradient(
-		rgba(255,255,255,0.5),
-		rgba(255,255,255, 0.5)
-		),
-	url("images/youtube.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	/*opacity:0.5;*/
-	height:513px;	
-}
+	/*margin-top: 80px;*/
+	background-image: url("images/camera.jpg");
+	height:370px;
+} 
 
 .video{
 	margin:auto;
 	text-align: center;
+	margin-top: 30px
 }
 
 @media (max-width: 320px) {  /*small mobile*/
@@ -165,15 +327,18 @@ nav ul {list-style-type: none;}
   }
 }
 
+
+
+
 /* équipe ***************************************/
 
-.equipe_followher{
+/*.equipe_followher{
 	background-image: url("images/equipe.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	color:black;
 	height:800px;
-}
+} */
 
 .passion{list-style-type: none;
 margin-top: 10px;
@@ -269,7 +434,7 @@ margin-top: 10px;
 
 /* live ***************************************/
 
-.live{
+/* .live{
 	background:
 	radial-gradient(
 		rgba(255,255,255,0.5),
@@ -279,16 +444,13 @@ margin-top: 10px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	color:black;
-}
+} */
 
-.article_recent {
-	border: 1px solid black;
-}
 
 
 /*partenaires ***************************************/
 
-.partenaires{
+/*.partenaires{
 	background:
 	radial-gradient(
 		rgba(255,255,255,0.5),
@@ -299,81 +461,7 @@ margin-top: 10px;
 	background-repeat: no-repeat;
 	color:black;
 	height:600px;
-}
+} */
 
 
-/************************************************/
-/*************     Footer      **************/
-/***********************************************/
 
-
-#separation {background: #white;
-	height : 10px;
-}
-
-.repere {	
-	font-weight: bold;
-	clear:both;
-	position:fixed;
-	bottom:0;
-	width:100%;
-}
-
-.white {
-	color:#F3F4F3;
-}
-
-.centre {
-	padding-top: 10px;
-}
-
-.sousmenu{
-	display: inline-block;
-	text-decoration: none; 
-	font-size: 14px;
-	margin-right:20px;
-	border-right: 1px solid white;
-}
-
-.sousmenu:hover {
-	display: inline-block;
-	text-decoration: none; 
-	font-size: 18px;
-	margin-right:20px;
-	border: 1px solid white;
-	background-color: #F5C159;
-	opacity: 0,2;
-	margin-bottom: 15px;
-}
-
-#click:hover{
-	display: inline-block;
-	text-decoration: none; 
-	font-size: 18px;
-	margin-right:20px;
-	border: 1px solid white;
-	background-color: #F5C159;
-	opacity: 0,2;
-	margin-bottom: 15px;
-}
-
-.taille{
-	font-size: 14px;
-}
-
-#space{
-	margin-left: 40px
-}
-
-.orange_clair{color:#F5C159;}
-
-/*.logopart{margin: 60px 60px 60px 100px;}*/
-.logopart{
-	margin-top: 80px;
-}
-
-@media (max-width: 320px) {  /*small mobile*/
-  .logopart img {
-    width:80%;
-  }
-}
