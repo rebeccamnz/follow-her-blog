@@ -69,6 +69,8 @@ nav ul {list-style-type: none;}
 /*************     HEADER      **************/
 /***********************************************/
 
+
+
 .background_green {
 	position: relative;
 	width: 100%;
@@ -91,6 +93,56 @@ nav ul {list-style-type: none;}
 		width: 100%;
 	}
 }
+
+
+#welcome {
+	height: 140px;
+	width: 140px;
+	overflow: hidden;
+	border-radius: 50%;
+	margin: auto;
+	position: relative;
+	border: 3px solid #F6B025;
+	margin: auto;
+	float:left;
+}
+
+.hidden_message {
+	display: none;
+	background-color: #F6B025;
+	opacity: 0.8;
+	position: absolute;
+	border-radius: 50%;
+	height: 100%;
+	margin: auto;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: white;
+	
+}
+
+
+.hidden_message p {
+	margin-top: 46%;
+	text-align: center;
+	font-size: 20px;
+	font-family: "Dosis", sans-serif;
+	font-weight: bold;
+	color: white;
+}
+
+#welcome:hover .hidden_message{
+	display: block;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -351,6 +403,7 @@ border-radius: 4px;
 /* background-color: transparent; */
 }
 
+
 /* h1 ***************************************/
 
 .blanc {
@@ -430,6 +483,18 @@ padding-left: 0px;
 	color: #88D8C5;
 	font-weight: bold;
 	padding-left: 20px;
+	margin-bottom: 30px;
+
+}
+
+.titre_orange{
+	font-family: "Dosis", sans-serif;
+	font-size: 22px;
+	color: #F6B025;
+	font-weight: bold;
+	padding-left: 20px;
+	margin-bottom: 30px;
+
 }
 
 .prenom_vert{
@@ -453,8 +518,12 @@ padding-left: 0px;
 	color: #454545;
 }
 
-.bordure {
+.bordure_orange {
 	border: 1px solid #F6B025;
+}
+
+.bordure_vert {
+	border: 1px solid #88D8C5;
 }
 
 @media (max-width: 320px) {  /*small mobile*/
@@ -464,7 +533,7 @@ padding-left: 0px;
 }
 
 .prez{
-	margin-top: 30px;
+	margin-top: 120px;
 }
 
 
@@ -502,6 +571,8 @@ padding-left: 0px;
 	display: block;
 }
 
+.aside_right {float:right;}
+.aside_left{float:left;}
 /* live ***************************************/
 
 /* .live{
@@ -538,4 +609,77 @@ padding-left: 0px;
 	width: 100%;
 	height: 60px;
 }
+
+
+/* page projet.follow'her ***************************************/
+ #us {
+ 	margin-top: 100px
+ }
+
+ #pics {
+ 	padding-top: 30px;
+ }
+
+ .team_pic {padding: 20px;
+ 	padding-bottom: 90px}
+
+#rond
+
+	{
+	/* margin-left: 30px; */
+	/* margin-right: 30px; */
+	text-align: center;
+	border: 1px solid #F6B025;
+	border-radius: 50%;
+	color: RGB(240,237,229);
+	background-color: #F6B025;
+	/* margin-top: 5px; */
+	margin: auto;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	padding-bottom: 70px;
+}
+
+#sous_titre_vert{
+	font-family: "Dosis", sans-serif;
+	font-size: 18px;
+	color: #88D8C5;
+	font-weight: bold;
+}
+
+#home_page_title_part{
+	font-family: "Dosis", sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	color: #F6B025;
+	}
+
+
+.steps {
+	margin-top: 50px;
+}
+
+.steps ul{
+	list-style-type: none;
+}
+
+.steps ul li {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 18px;
+	color: #454545;
+	margin-bottom: 40px;
+}
+
+.trip {
+	margin-top: 10px
+}
+
+.trip p {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 18px;
+	color: #88D8C5;
+}
+
 
