@@ -31,8 +31,9 @@ include "header.php";
 
 <div class="equipe_followher">
 
-<div class="container-fluid">
+<div class="container-fluid ">
 	
+	<div class="fondecran">
 	<h1 class="home_page_title">Qui est Follow'Her ?</h1>
 	<h3 class="intro hidden-xs"> <i class="fa fa-trophy"></i> Ce qu'elle a de plus précieux, <i class="fa fa-key"></i> Ce qu'elle n'a jamais dévoilé, <i class="fa fa-heart"></i> Ce qui la fait fondre, <i class="fa fa-tint"></i> Ce qui lui file la frousse, <i class="fa fa-smile-o"></i> Ce qui la rend hilare </h3>
 	
@@ -175,7 +176,7 @@ include "header.php";
 		</div>
 	
 	</div> <-->
-
+	</div>
 </div>
 </div>
 
@@ -230,13 +231,13 @@ include "header.php";
 	
 	<div class="row logopart">
 		<div class="col-md-4">
-			<a href="http://www.sterio.me/" target="_blank"> <img src="images/Sterio-me.png" alt="sterio_me" class="rounded"> </a>
+			<a href="http://www.sterio.me/" target="_blank"> <img src="images/sterio-me.png" alt="sterio_me" class="rounded"> </a>
 		</div>
 		<div class="col-md-4">
 			<a href="http://buffalogrid.org/" target="_blank"> <img src="images/buffalo-grid.png" alt="Buffalo_Grid" class="rounded"> </a>
 		</div>
 		<div class="col-md-4">
-			<a href="https://www.w4.org/fr/" target="_blank"><img src="images/w4.jpg" alt="W4" class="rounded"> </a>
+			<a href="https://www.w4.org/fr/" target="_blank"><img src="images/wwww.jpg" alt="W4" class="rounded"> </a>
 		</div>
 	</div>
 			

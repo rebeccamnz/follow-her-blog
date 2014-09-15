@@ -419,6 +419,8 @@ border-radius: 4px;
 }
 
 
+
+
 /* video ***************************************/
 
 
@@ -433,15 +435,19 @@ border-radius: 4px;
 
 
 
-/* équipe ***************************************/
 
-/*.equipe_followher{
-	background-image: url("images/equipe.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	color:black;
-	height:800px;
-} */
+/* equipe ******************************/
+.fondecran {
+	background:
+	radial-gradient(
+		rgba(244,243,244,0.2),
+		rgba(244,243,244, 0.2)
+		),
+	url("images/pattern.jpg"); 
+	position:fixed;
+	top:0;
+}
+
 
 .passion{list-style-type: none;
 margin-top: 10px;
