@@ -34,10 +34,10 @@ include "header.php";
 <div class="container-fluid ">
 	
 	<div class="fondecran">
-	<h1 class="home_page_title">Qui est Follow'Her ?</h1>
-	<h3 class="intro hidden-xs"> <i class="fa fa-trophy"></i> Ce qu'elle a de plus précieux, <i class="fa fa-key"></i> Ce qu'elle n'a jamais dévoilé, <i class="fa fa-heart"></i> Ce qui la fait fondre, <i class="fa fa-tint"></i> Ce qui lui file la frousse, <i class="fa fa-smile-o"></i> Ce qui la rend hilare </h3>
+		<h1 class="home_page_title">Qui est Follow'Her ?</h1>
+		<h3 class="intro hidden-xs"> <i class="fa fa-trophy"></i> Ce qu'elle a de plus précieux, <i class="fa fa-key"></i> Ce qu'elle n'a jamais dévoilé, <i class="fa fa-heart"></i> Ce qui la fait fondre, <i class="fa fa-tint"></i> Ce qui lui file la frousse, <i class="fa fa-smile-o"></i> Ce qui la rend hilare </h3>
 	
-	<div class="presentation_equipe">
+		<div class="presentation_equipe">
 
     	<div class="row">
     		
@@ -60,7 +60,7 @@ include "header.php";
 					<li class="prenom_gris text-justify text-left"><i class="fa fa-smile-o"></i>Ce qui la rend hilare </li>
 				</ul>
 			</div>	
-    	</div>
+    	</div> <!--fin "row 1" -->
 
 
     	<div class="row">
@@ -85,7 +85,7 @@ include "header.php";
 				</ul>
 			</div>
 
-    	</div>
+    	</div> <!--fin "row 2" -->
 
     	<div class="row">
     		
@@ -109,7 +109,7 @@ include "header.php";
 				</ul>
 			</div>
 
-    	</div>
+    	</div> <!--fin "row 3" -->
 
     	<div class="row">
     		
@@ -133,7 +133,7 @@ include "header.php";
 				</ul>
 			</div>
 
-    	</div>
+    	</div> <!--fin "row 4" -->
 
     	<div class="row">
     		
@@ -157,9 +157,9 @@ include "header.php";
 				</ul>
 			</div>
 
-    	</div>
+    	</div> <!--fin "row 5" -->
 
-  	</div>
+  	</div> <!--fin "presentation_equipe" -->
 
 	<!-- <div class="row prez">
 
@@ -176,9 +176,10 @@ include "header.php";
 		</div>
 	
 	</div> <-->
-	</div>
-</div>
-</div>
+	</div> <!--fin "fondecran" -->
+	</div> <!--fin "container" -->
+</div> <!--fin "equipe FH" -->
+
 
 <div class="live">
 
