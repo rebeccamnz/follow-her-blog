@@ -23,56 +23,51 @@
 <body>
 <!-- <div class="container-fluid"> <-->
 <header>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-1">
+        <div id="welcome">
+          <a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="Follow'Her Logo" class="pastille"/>
+           <div class="hidden_message">
+             <p class="home">HOME</p>
+           </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-10 marg">
+        <nav class="navbar navbar-default navbar-transparent" role="navigation">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
 
-
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-xs-2">
-          <div id="welcome">
-            <a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="Follow'Her Logo" class="pastille"/>
-             <div class="hidden_message">
-               <p class="home">HOME</p>
-             </div>
-            </a>
-          </div>
-    </div>
-    <div class="col-xs-6">
-      <nav class="navbar navbar-default navbar-transparent" role="navigation">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <!-- Ajouter un menu (étape 3 avec Bootstrap) et gérée par WordPress.  -->
-            <?php
-              wp_nav_menu( array(
-                  'menu'              => 'accueil',
-                  'theme_location'    => 'accueil',
-                  'depth'             => 2,
-                  'container'         => 'div',
-                  'container_class'   => 'collapse navbar-collapse row',
-                  'container_id'      => 'bs-example-navbar-collapse-1',
-                  'menu_class'        => 'nav navbar-nav',
-                  'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                  'walker'            => new wp_bootstrap_navwalker())
-              );
-               ?>
-      
-          </div><!-- /.container-fluid -->
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <!-- Ajouter un menu (étape 3 avec Bootstrap) et gérée par WordPress.  -->
+              <?php
+                wp_nav_menu( array(
+                    'menu'              => 'accueil',
+                    'theme_location'    => 'accueil',
+                    'depth'             => 2,
+                    'container'         => 'div',
+                    'container_class'   => 'collapse navbar-collapse row',
+                    'container_id'      => 'bs-example-navbar-collapse-1',
+                    'menu_class'        => 'nav navbar-nav',
+                    'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                    'walker'            => new wp_bootstrap_navwalker())
+                );
+                 ?>
+        
+            </div><!-- /.container-fluid -->
         </nav>
-      
-
-    </div>
-    <div class="col-xs-4">
-            <ul class ="list-inline text-right orange_clair">
+      </div>
+      <div class="col-md-3 marg hidden-xs hidden-sm hidden-md">
+          <ul class ="list-inline text-right orange_clair">
               <li class="sousmenu"><a href="#" target="_blank"><i class="centre fa fa-map-marker white"></i></a></li>
                   <!-- redirige vers une page Google Map où je me géolocalise-->
               <li class="sousmenu"><a href="http://www.facebook.com/projet.followher" target="_blank"> <i class="fa fa-facebook"></i> </a> </li>
@@ -80,99 +75,23 @@
               <li class="sousmenu"><a href=#> <i class="fa fa-envelope-o"></i> </a></li>
                   <!-- permet d'envoyer un mail -->   
               <li> 
-              <div class="dropdown">
-                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-                  <i class="fa fa-cog orange_clair"></i>
-                  <span class="caret"></span>
-                  </button>
-                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">FR</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">ANG</a></li>
-                  </ul>
-              </div>
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                      <i class="fa fa-cog orange_clair"></i>
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">FR</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">ANG</a></li>
+                    </ul>
+                </div>
               </li>
             <!-- <li class="sousmenu"><a href=#>ANG</a></li>
             <li class="sousmenu"><a href=#>FR</a></li> -->
-            </ul>
+          </ul>
+      </div>
     </div>
   </div>
-</div>
-
-    <div id="welcome">
-    	<a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="Follow'Her Logo" class="pastille"/>
-    	 <div class="hidden_message">
-			   <p class="home">HOME</p>
-       </div>
-		  </a>
-    </div>
-    
-
- 	  	
-    <div class="headhead">	<!-- NAVBAR -->
-    
-    <nav class="navbar navbar-default navbar-transparent" role="navigation">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <!-- Ajouter un menu (étape 3 avec Bootstrap) et gérée par WordPress.  -->
-          <?php
-            wp_nav_menu( array(
-                'menu'              => 'accueil',
-                'theme_location'    => 'accueil',
-                'depth'             => 2,
-                'container'         => 'div',
-                'container_class'   => 'collapse navbar-collapse row',
-                'container_id'      => 'bs-example-navbar-collapse-1',
-                'menu_class'        => 'nav navbar-nav',
-                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                'walker'            => new wp_bootstrap_navwalker())
-            );
-             ?>
-    
-        </div><!-- /.container-fluid -->
-      </nav>
- 
-
-	<!-- REPERE -->
-	   
-
-    	<ul class ="list-inline text-right orange_clair">
-  			<li class="sousmenu"><a href="#" target="_blank"><i class="centre fa fa-map-marker white"></i></a></li>
-  					<!-- redirige vers une page Google Map où je me géolocalise-->
-  			<li class="sousmenu"><a href="http://www.facebook.com/projet.followher" target="_blank"> <i class="fa fa-facebook"></i> </a> </li>
-  			<li class="sousmenu" data-uk-tooltip title="Twitter"><a href="https://twitter.com/projetfollowher" target="_blank"><i class="fa fa-twitter"></i></a></li>
-  			<li class="sousmenu"><a href=#> <i class="fa fa-envelope-o"></i> </a></li>
-  					<!-- permet d'envoyer un mail -->		
-  			<li> 
-  			<div class="dropdown">
-    				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-     				<i class="fa fa-cog orange_clair"></i>
-      			<span class="caret"></span>
-    				</button>
-   				 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-      				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">FR</a></li>
-      				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">ANG</a></li>
-    				</ul>
-  			</div>
-  			</li>
-			<!-- <li class="sousmenu"><a href=#>ANG</a></li>
-			<li class="sousmenu"><a href=#>FR</a></li> -->
-		  </ul>
-
-      </div>
-
-  
-
-
 </header>
 
 
