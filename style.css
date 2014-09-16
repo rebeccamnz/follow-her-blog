@@ -1,9 +1,25 @@
+/*
+Theme Name: Follow'Her
+Theme URI: http://something.com
+Author: Team Follow'Her
+Author URI: http://me-myself-and-i.com
+Description: Site pour les ONG, les associations qui se veulent dynamiques
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, genius, talented
+*/
+
+
+
+
+
 /************************************************/
 /*************     INITIALIZE      **************/
 /***********************************************/
 a {
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
 
 body {
@@ -69,7 +85,9 @@ nav ul {list-style-type: none;}
 /*************     HEADER      **************/
 /***********************************************/
 
-
+.headhead {
+	padding-top: 28px;
+}
 
 
 
@@ -84,6 +102,7 @@ nav ul {list-style-type: none;}
 	border: 3px solid #F6B025;
 	margin: auto;
 	float:left;
+	padding-top: -26px;
 }
 
 .hidden_message {
@@ -231,25 +250,44 @@ header {
  border-color: transparent;
 }
 
-.navbar li {
-	color: #F3F4F3; 
-	font-size: 16px;
-	font-family: "Dosis", sans-serif;
-}
-
 .navbar {
 	line-height: 50px;
 	float:left;
+	margin:0;
 }
 
 
+.navbar li {
+	color: #F3F4F3; 
+	font-size: 24px;
+	font-family: "Dosis", sans-serif;
+}
+
+
+@media (max-width:1210px) {
+	.navbar li{
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 1057px) {
+	.navbar li{
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 960px) {
+	.navbar li{
+		font-size: 12px;
+	}
+}
+
 .navbar-transparent .navbar-nav > li > a:hover{
-	color: #88D8C5; 
-	font-size: 16px;
+	font-size: 24px;
 	font-family: "Dosis", sans-serif;
 	font-weight: bold;
-	background: none;
-	
+	background-color: RGB(240,237,229);
+	color: #88D8C5; 
 }
 
 /** @media (max-width: 767px) {  
@@ -266,16 +304,15 @@ header {
   }
 }
 
-**///
+**/
 
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus 
 
 {
-	color: #555;
 	background-color: RGB(240,237,229);
 	color: #88D8C5; 
-	font-size: 16px;
+	font-size: 24px;
 	font-family: "Dosis", sans-serif;
 	font-weight: bold;	
 }	
@@ -283,6 +320,22 @@ header {
 
 .navbar-nav li {
 	border-radius: 5px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	background-color: RGB(240,237,229);
+	color: #88D8C5; 
+	font-size: 24px;
+	font-family: "Dosis", sans-serif;
+	font-weight: bold;	
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+border-color: white;
 }
 
 /************************************************/
@@ -320,7 +373,7 @@ header {
 	color:white;
 	font-weight: bold;
 	/*font-size: 14px;*/
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	-webkit-transition: font-size 0.5s ease-out;
 	  -moz-transition: font-size 0.5s ease-out;
 	  -o-transition: font-size 0.5s ease-out;
@@ -340,8 +393,7 @@ body > div:nth-child(1) > header > div.col-xs-4 > ul > li{
 .sousmenu:hover {
 	/*display: inline-block;*/
 	text-decoration: none; 
-	/*font-size: 2,5rem;*/
-	*font-size: 18px;
+	font-size: 2.5rem;
 	margin-right: 20px;
 	/*border: 1px solid white;*/
 	background-color: #F5C159;
@@ -358,7 +410,7 @@ body > div:nth-child(1) > header > div.col-xs-4 > ul > li{
 	margin-left: 40px
 }
 
-.orange_clair{color:#F6B025;}
+.orange_clair{color:#F6B025; float:right;}
 
 
 
@@ -395,6 +447,10 @@ border-radius: 4px;
 }
 
 
+a:hover, a:focus {
+color: white;
+text-decoration: underline;
+}
 
 /* h1 ***************************************/
 
@@ -402,7 +458,6 @@ border-radius: 4px;
 .background_green {
 	position: relative;
 	width: 100%;
-	margin-top: 70px;
 }
 
 .mask {
@@ -447,7 +502,8 @@ border-radius: 4px;
 
 .video_followher {
 	background-image: url("images/camera.jpg");
-	height: 100%; 
+width: 100%;
+margin: auto;
 }
 
 .our_video {
@@ -469,6 +525,26 @@ border-radius: 4px;
 	top:0;
 }
 */
+
+
+.image_background {
+	background:
+	radial-gradient(
+		rgba(244,243,244,0.8),
+		rgba(244,243,244, 0.8)
+		),
+	url("images/backback.jpg"); 
+	background-size: cover;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+
+
 
 .passion{list-style-type: none;
 margin-top: 10px;
@@ -625,14 +701,15 @@ padding-left: 0px;
 	height:600px;
 } */
 
+.partenaires{
+	margin-bottom: 5px;
+}
 
 /*footer ***************************************/
 .bottom_down {
 	background-color: #F6B025;
 	width: 100%;
 	height: 30px;
-	margin-top: 50px;
-	margin-bottom: 2px;
 }
 
 .copyright
@@ -731,8 +808,8 @@ padding-left: 0px;
 		rgba(244,243,244,0.8),
 		rgba(244,243,244, 0.8)
 		),
-	url("images/background3.jpg"); 
-	background-position: fixed;
+	url("images/background4.jpg"); 
+	background-size: cover;
 	top:0;
 	margin-top: 70px;
 	width: 100%;

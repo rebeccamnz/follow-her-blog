@@ -19,15 +19,18 @@ include "header.php";
 
 
 <div class="background_green">
-	<img src="images/mobile_woman.jpg" />
+	<img src="<?php bloginfo('template_directory'); ?>/images/mobilewoman.jpg" />
 	<div class="mask"> </div>
 </div>
 
 
 <div class="video_followher logo_fh row"> 
-<div class="col-md-offset-3 col-md-3 our_video"> <iframe width="560" height="315" src="http://www.youtube.com/embed/BKtrWU4zaaI?rel=0" frameborder="0" allowfullscreen></iframe>  </div>
+<div class="col-md-offset-3 col-md-6 our_video"> <iframe width="100%" height="315" src="http://www.youtube.com/embed/BKtrWU4zaaI?rel=0" frameborder="0" allowfullscreen></iframe>  </div>
 </div>
 
+
+
+<div class="image_background">
 
 <div class="equipe_followher">
 
@@ -44,7 +47,7 @@ include "header.php";
     		<div class="col-md-offset-1 col-md-2">
     			<h3 class="prenom_vert">Hélène</h3>
     			<div class="parent2">
-					<img class="rounded img-responsive"src="images/Hélène.png" alt="Hélène Follow'Her"/>
+					<img class="rounded img-responsive"src="<?php bloginfo('template_directory'); ?>/images/helene.png" alt="Hélène Follow'Her"/>
 					<div class="hidden_message2">
 						<p>
 						LENI
@@ -68,7 +71,7 @@ include "header.php";
     		<div class="col-md-offset-5 col-md-2">
 	    		<h3 class="prenom_vert">Juliette</h3>
 	    		<div class="parent2">
-					<img class="rounded img-responsive"src="images/Juliette.png" alt="Juliette Follow'Her"/>
+					<img class="rounded img-responsive"src="<?php bloginfo('template_directory'); ?>/images/juliette.png" alt="Juliette Follow'Her"/>
 					<div class="hidden_message2">
 						<p>
 						FILI
@@ -92,7 +95,7 @@ include "header.php";
     		<div class="col-md-offset-2 col-md-2">
 	    		<h3 class="prenom_vert">Rebecca</h3>
 	    		<div class="parent2">
-					<img class="rounded img-responsive"src="images/Rebecca.png" alt="Rebecca Follow'Her"/>
+					<img class="rounded img-responsive"src="<?php bloginfo('template_directory'); ?>/images/rebecca.png" alt="Rebecca Follow'Her"/>
 					<div class="hidden_message2">
 						<p>
 						BEX
@@ -116,7 +119,7 @@ include "header.php";
     		<div class="col-md-offset-6 col-md-2">
 	    		<h3 class="prenom_vert">Emmanuelle</h3>
 	    		<div class="parent2">
-					<img class="rounded img-responsive"src="images/Emmanuelle.png" alt="Emmanuelle Follow'Her"/>
+					<img class="rounded img-responsive"src="<?php bloginfo('template_directory'); ?>/images/emmanuelle.png" alt="Emmanuelle Follow'Her"/>
 					<div class="hidden_message2">
 						<p>
 						MANUE
@@ -140,7 +143,7 @@ include "header.php";
     		<div class="col-md-offset-1 col-md-2">
 	    		<h3 class="prenom_vert">Charlotte</h3>
 	    		<div class="parent2">
-					<img class="rounded img-responsive"src="images/Charlotte.png" alt="Charlotte Follow'Her"/>
+					<img class="rounded img-responsive"src="<?php bloginfo('template_directory'); ?>/images/charlotte.png" alt="Charlotte Follow'Her"/>
 					<div class="hidden_message2">
 						<p>
 						FANON
@@ -217,28 +220,28 @@ include "header.php";
 	
 	<div class="row center-block logopart">
 		<div class="col-md-3">
-			<a href="http://galeriekeza.com" target="_blank"><img src="images/Keza.jpg" alt="Galerie Keza" class="rounded"> </a>
+			<a href="http://galeriekeza.com" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/keza.jpg" alt="Galerie Keza" class="rounded"> </a>
 		</div>
 		<div class="col-md-3">
-			<a href="http://www.scheffer.fr/" target="_blank"><img src="images/Scheffer.gif" alt="Scheffer" class="rounded"> </a>
+			<a href="http://www.scheffer.fr/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/scheffer.gif" alt="Scheffer" class="rounded"> </a>
 		</div>
 		<div class="col-md-3">
-			<a href="http://www.ampion.org" target="_blank"><img src="images/ampion.jpg" alt="Ampion" class="rounded"> </a>
+			<a href="http://www.ampion.org" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/ampion.jpg" alt="Ampion" class="rounded"> </a>
 		</div>
 		<div class="col-md-3">
-			<a href="http://www.passerellesnumeriques.org/"target="_blank"> <img src="images/PN.png" alt="Passerelles_Numeriques" class="rounded"> </a>
+			<a href="http://www.passerellesnumeriques.org/"target="_blank"> <img src="<?php bloginfo('template_directory'); ?>/images/pn.png" alt="Passerelles_Numeriques" class="rounded"> </a>
 		</div>
 	</div>
 	
 	<div class="row logopart">
 		<div class="col-md-4">
-			<a href="http://www.sterio.me/" target="_blank"> <img src="images/sterio-me.png" alt="sterio_me" class="rounded"> </a>
+			<a href="http://www.sterio.me/" target="_blank"> <img src="<?php bloginfo('template_directory'); ?>/images/steriome.png" alt="steriome" class="rounded"> </a>
 		</div>
 		<div class="col-md-4">
-			<a href="http://buffalogrid.org/" target="_blank"> <img src="images/buffalo-grid.png" alt="Buffalo_Grid" class="rounded"> </a>
+			<a href="http://buffalogrid.org/" target="_blank"> <img src="<?php bloginfo('template_directory'); ?>/images/buffalogrid.png" alt="Buffalo_Grid" class="rounded"> </a>
 		</div>
 		<div class="col-md-4">
-			<a href="https://www.w4.org/fr/" target="_blank"><img src="images/wwww.jpg" alt="W4" class="rounded"> </a>
+			<a href="https://www.w4.org/fr/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/wwww.jpg" alt="W4" class="rounded"> </a>
 		</div>
 	</div>
 			
@@ -246,21 +249,5 @@ include "header.php";
 
 </div> 
 
+<?php get_footer(); ?>
 
-<footer class="bottom_down"> 
-<p class="copyright"> 2014 © Follow'Her | All right reserved </p> 
-</footer>
-
-
-
-
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-<!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="global.js"></script>
-
-</body>
-</html>
