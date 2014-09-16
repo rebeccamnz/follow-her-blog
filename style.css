@@ -320,8 +320,12 @@ header {
 	color:white;
 	font-weight: bold;
 	/*font-size: 14px;*/
-	transition: font-size 0.5s ease;
 	font-size: 1.5rem;
+	-webkit-transition: font-size 0.5s ease-out;
+	  -moz-transition: font-size 0.5s ease-out;
+	  -o-transition: font-size 0.5s ease-out;
+	  transition: font-size 0.5s ease-out;
+	
 }
 
 body > div:nth-child(1) > header > div.col-xs-4 > ul > li{
@@ -336,8 +340,8 @@ body > div:nth-child(1) > header > div.col-xs-4 > ul > li{
 .sousmenu:hover {
 	/*display: inline-block;*/
 	text-decoration: none; 
-	font-size: 2,5rem;
-	/*font-size: 18px;*/
+	/*font-size: 2,5rem;*/
+	*font-size: 18px;
 	margin-right: 20px;
 	/*border: 1px solid white;*/
 	background-color: #F5C159;
@@ -621,10 +625,24 @@ padding-left: 0px;
 	height:600px;
 } */
 
+
+/*footer ***************************************/
 .bottom_down {
-	background-color: RGB(240,237,229);
+	background-color: #F6B025;
 	width: 100%;
-	height: 60px;
+	height: 30px;
+	margin-top: 50px;
+	margin-bottom: 2px;
+}
+
+.copyright
+	{
+	color : RGB(240,237,229);
+	font-family: "Dosis", sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center; 
+	margin: auto;
 }
 
 

@@ -244,10 +244,14 @@ include "header.php";
 			
 </div>
 
-<div class="bottom_down"> </div>
-
-
 </div> 
+
+
+<footer class="bottom_down"> 
+<p class="copyright"> 2014 © Follow'Her | All right reserved </p> 
+</footer>
+
+
 
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
