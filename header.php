@@ -7,17 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bootstrap/css/bootstrap.min.css">
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  	<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
-  	<link href='http://fonts.googleapis.com/css?family=Dosis:500' rel='stylesheet' type='text/css'>
-  	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
-  	 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- Leave those next 4 lines if you care about users using IE8 -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
      <link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_uri() ); ?>" type="text/css" /> <!-- instead of style.css -->
-  <!-- <?php wp_head(); ?> -->
+   <?php wp_head(); ?> 
 </head>
 
 <body>
@@ -25,7 +25,7 @@
 <header>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-1">
+      <div class="col-xs-2">
         <div id="welcome">
           <a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="Follow'Her Logo" class="pastille"/>
            <div class="hidden_message">
@@ -34,9 +34,9 @@
           </a>
         </div>
       </div>
-      <div class="col-lg-8 col-md-10 marg">
+      <div class="col-xs-10 col-lg-7 marg">
         <nav class="navbar navbar-default navbar-transparent" role="navigation">
-            <div class="container-fluid">
+            <div class="container-navbar-collapse">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -66,7 +66,7 @@
             </div><!-- /.container-fluid -->
         </nav>
       </div>
-      <div class="col-md-3 marg hidden-xs hidden-sm hidden-md">
+      <div class="col-lg-3 marg hidden-xs hidden-sm hidden-md">
           <ul class ="list-inline text-right orange_clair">
               <li class="sousmenu"><a href="#" target="_blank"><i class="centre fa fa-map-marker white"></i></a></li>
                   <!-- redirige vers une page Google Map où je me géolocalise-->

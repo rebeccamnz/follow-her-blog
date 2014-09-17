@@ -5,7 +5,7 @@ add_theme_support( 'post-thumbnails' );
 
 function excerpt_read_more_link($output) {
   global $post;
-  return $output . '<a href="'. get_permalink($post->ID) . '"> En savoir plus...</a>';
+  return $output . '<a href="'. get_permalink($post->ID) .'" class="more"> En savoir plus...</a>';
 }
 add_filter('the_excerpt', 'excerpt_read_more_link');
 
