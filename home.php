@@ -6,8 +6,11 @@ include "header.php";
 
 
 	<div class="background_green">
-		<img src="<?php bloginfo('template_directory'); ?>/images/mobilewoman.jpg" />
+		<img  class="mobilewoman" src="<?php bloginfo('template_directory'); ?>/images/mobilewoman.jpg" />
 		<div class="mask"> </div>
+		<div class="logofine">
+			<img class="img-responsive loglog" src="<?php bloginfo('template_directory'); ?>/images/logo_nom.png" />
+		</div>
 	</div>
 
 
