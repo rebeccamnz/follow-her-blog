@@ -164,7 +164,7 @@ include "header.php";
 	<div class="row">
 		
 		<?php if (have_posts()) : ?>
-	   	<?php query_posts('cat=-16&showposts=2'); ?>
+	   	<?php query_posts('showposts=2'); ?>
 	   	<?php while (have_posts()) : the_post(); ?>
 		   	<div class="col-md-3 col-md-offset-1">
 			   	<a href="<?php echo get_permalink(); ?>">

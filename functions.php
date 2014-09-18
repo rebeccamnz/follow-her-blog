@@ -22,3 +22,15 @@ function register_my_menus() {
 require_once('wp_bootstrap_navwalker.php');
 
 add_action ('init', 'register_my_menus');
+
+if ( function_exists('register_sidebar') ) {
+  register_sidebar(array(
+    'name' => 'Main Sidebar',
+    'id' => 'main-sidebar',
+    'description' => 'Displayed in my home',
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h4 class="section">',
+    'after_title' => '</h4>',
+  ));
+}
