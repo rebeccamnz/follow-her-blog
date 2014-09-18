@@ -176,6 +176,7 @@ header {
 	position: relative;
 	border: 3px solid #F6B025;
 	margin: auto;
+	background-color: #F3F4F3;
 }
 
 
@@ -241,7 +242,7 @@ header {
 .navbar li {
 	color: #F3F4F3; 
 	font-size: 18px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 @media (max-width:870px) {
@@ -274,9 +275,9 @@ header {
 
 
 .navbar-transparent .navbar-nav > li > a:hover{
-	font-size: 18px;
-	font-family: 'Lato', sans-serif;
-	font-weight: bold;
+	font-size: 22px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	/*font-weight: bold;*/
 	background-color: RGB(240,237,229);
 	color: #198774;
 	opacity: 0.8;
@@ -309,9 +310,9 @@ header {
 {
 	background-color: RGB(240,237,229);
 	color: #88D8C5; 
-	font-size: 12px;
-	font-family: 'Lato', sans-serif;
-	font-weight: bold;	
+	font-size: 22px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	/*font-weight: bold;*/	
 }	
 
 
@@ -322,9 +323,9 @@ header {
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
 	background-color: rgb(240,237,229);
 	color: #88D8C5; 
-	font-size: 18px;
-	font-family: 'Lato', sans-serif;
-	font-weight: bold;	
+	font-size: 22px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	/*font-weight: bold;*/	
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -484,6 +485,10 @@ text-decoration: underline;
 
 }
 
+.loglog {
+	filter: saturate(50%);
+}
+
 
 @media (max-width:800px) {
 	.logofine {
@@ -500,11 +505,11 @@ text-decoration: underline;
 }
 
 .home_page_title {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 60px;
-	font-weight: bold;
+	/* font-weight: bold; */
 	text-align: center;
-	color: #F6B025;
+	/* color: #F6B025; */
 	line-height: 100px;
 }
 
@@ -626,8 +631,8 @@ padding-left: 0px;
 	text-align: center;
 }
 .prenom_gris{
-	font-family: 'Lato', sans-serif;
-	font-size: 14px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
 	color: #454545;
 	text-align: justify;
 
@@ -730,7 +735,7 @@ padding-left: 0px;
 .aside_left{/*float:left;*/}
 
 
-/* live ***************************************
+/* live ***************************************/
 
  .live{
  	background:
@@ -738,12 +743,16 @@ padding-left: 0px;
 		rgba(243,244,243,0.5),
 		rgba(243,244,243, 0.5)
 		),
-	url("images/leather.png");
+	url("images/live.jpg");
 width: 100%;
 margin: auto;
+background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
 }
 
-**/
+
 
 /*partenaires ***************************************/
 
@@ -965,7 +974,7 @@ margin: auto;
 }
 
 .article .home_page_title ul li a{
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 50px;
 	font-weight: bold;
 	text-align: center;

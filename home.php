@@ -33,7 +33,7 @@ include "header.php";
 	<div class="container-fluid ">
 
 		<div class="star">
-          <span><h1 class="home_page_title">Qui est Follow'Her ?</h1></span>
+          <span><h1 class="home_page_title">QUI EST FOLLOW'HER?</h1></span>
         </div>
 
 		<h3 class="intro hidden-xs"> <i class="fa fa-trophy"></i> Ce qu'elle a de plus précieux, <i class="fa fa-key"></i> Ce qu'elle n'a jamais dévoilé, <i class="fa fa-heart"></i> Ce qui la fait fondre, <i class="fa fa-tint"></i> Ce qui lui file la frousse, <i class="fa fa-smile-o"></i> Ce qui la rend hilare </h3>
