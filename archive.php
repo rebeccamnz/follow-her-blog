@@ -5,7 +5,6 @@
 
         <div class="row">
            <?php if (have_posts()) : ?>
-	   	<?php query_posts('showposts=2'); ?>
 	   	<?php while (have_posts()) : the_post(); ?>
 		   	<div class="col-md-5 col-md-offset-1">
 			   	<a href="<?php echo get_permalink(); ?>">
@@ -15,7 +14,6 @@
 			    <div class="corps_gris text-justify"><?php the_excerpt(); ?></div>
 		    </div>
 		<?php endwhile; ?>
-		<?php wp_reset_query(); ?>
 	 	<?php endif; ?>
         </div>
 

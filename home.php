@@ -1,8 +1,5 @@
-<?php
-$title = "Follow'Her : Les femmes et le digital";
-$meta_description = "Follow'Her : promotion du digital et des nouvelles technologies pour l'émancipation des femmes dans les pays en développement";
-include "header.php";
-?>
+<?php get_header(); ?>
+
 
 
 	<div class="background_green">
@@ -33,14 +30,95 @@ include "header.php";
 	<div class="container-fluid ">
 
 		<div class="star">
-          <span><h1 class="home_page_title">QUI EST FOLLOW'HER?</h1></span>
+          <span><h1 class="home_page_title">QUI EST FOLLOW'HER ?</h1></span>
         </div>
 
-		<h3 class="intro hidden-xs"> <i class="fa fa-trophy"></i> Ce qu'elle a de plus précieux, <i class="fa fa-key"></i> Ce qu'elle n'a jamais dévoilé, <i class="fa fa-heart"></i> Ce qui la fait fondre, <i class="fa fa-tint"></i> Ce qui lui file la frousse, <i class="fa fa-smile-o"></i> Ce qui la rend hilare </h3>
-	
-		<div class="presentation_equipe">
+        <div class="presentation_equipe">
 
-	    	<div class="row">    		
+        <div class="row portrait">
+
+        	<div class="col-md-offset-1 col-md-3 parent2">
+				<img class="  squared img-responsive"src="<?php bloginfo('template_directory'); ?>/images/helene.jpg" alt="Hélène Follow'Her"/>
+				<div class="hidden_message2">
+					<p>
+					Hélène est ............
+					</p>
+				</div>
+			</div>
+
+
+        	<div class="col-md-3 parent2">
+				<img class=" squared img-responsive"src="<?php bloginfo('template_directory'); ?>/images/juliette.jpg" alt="Juliette Follow'Her"/>
+				<div class="hidden_message2">
+					<p>
+					Juliette est ............
+					</p>
+				</div>
+			</div>	
+
+			<div class="col-md-3 parent2">
+				<img class=" squared img-responsive"src="<?php bloginfo('template_directory'); ?>/images/emmanuelle.jpg" alt="Emmanuelle Follow'Her"/>
+				<div class="hidden_message2">
+					<p>
+					Emmanuelle est ............
+					</p>
+				</div>
+			</div>
+
+        </div> <!-- fin class row avec les 3 -->
+
+        <div class="row">
+
+        	<div class="col-md-3 col-md-offset-3 parent2">
+				<img class=" squared img-responsive"src="<?php bloginfo('template_directory'); ?>/images/rebecca.jpg" alt="Rebecca Follow'Her"/>
+				<div class="hidden_message2">
+					<p>
+					Rebecca est ............
+					</p>
+				</div>
+			</div>	
+
+			<div class="col-md-3  parent2">
+				<img class="squared img-responsive"src="<?php bloginfo('template_directory'); ?>/images/charlotte.jpg" alt="Rebecca Follow'Her"/>
+				<div class="hidden_message2">
+					<p>
+					Charlotte est ............
+					</p>
+				</div>
+			</div>	
+
+			
+
+		</div> <!-- fin class avec les 2 -->
+	</div>
+	</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- <h3 class="intro hidden-xs"> <i class="fa fa-trophy"></i> Ce qu'elle a de plus précieux, <i class="fa fa-key"></i> Ce qu'elle n'a jamais dévoilé, <i class="fa fa-heart"></i> Ce qui la fait fondre, <i class="fa fa-tint"></i> Ce qui lui file la frousse, <i class="fa fa-smile-o"></i> Ce qui la rend hilare </h3> -->
+	
+		<!-- <div class="presentation_equipe">
+
+	    	<!-- <div class="row">    		
 	    		<div class="col-md-offset-1 col-md-2">
 	    			<h3 class="prenom_vert">Hélène</h3>
 	    			<div class="parent2">
@@ -63,7 +141,7 @@ include "header.php";
 	    	</div> <!--fin "row 1" -->
 
 
-	    	<div class="row">
+	    	<!-- <div class="row">
 	    		<div class="col-md-offset-5 col-md-2">
 		    		<h3 class="prenom_vert">Juliette</h3>
 		    		<div class="parent2">
@@ -85,7 +163,7 @@ include "header.php";
 				</div>
 	    	</div> <!--fin "row 2" -->
 
-	    	<div class="row">
+	    	<!-- <div class="row">
 	    		<div class="col-md-offset-2 col-md-2">
 		    		<h3 class="prenom_vert">Rebecca</h3>
 		    		<div class="parent2">
@@ -107,7 +185,7 @@ include "header.php";
 				</div>
 	    	</div> <!--fin "row 3" -->
 
-	    	<div class="row">    		
+	    	<!-- <div class="row">    		
 	    		<div class="col-md-offset-6 col-md-2">
 		    		<h3 class="prenom_vert">Emmanuelle</h3>
 		    		<div class="parent2">
@@ -129,7 +207,7 @@ include "header.php";
 				</div>
 	    	</div> <!--fin "row 4" -->
 
-	    	<div class="row">
+	    	<!-- <div class="row">
 	    		<div class="col-md-offset-1 col-md-2">
 		    		<h3 class="prenom_vert">Charlotte</h3>
 		    		<div class="parent2">
@@ -151,7 +229,12 @@ include "header.php";
 				</div>
 	    	</div> <!--fin "row 5" -->
 		
-		</div> <!--fin "presentation_equipe" -->
+		<!-- </div> <!--fin "presentation_equipe" -->
+
+
+
+
+
 
 	</div> <!--fin "container" -->
 
@@ -161,20 +244,23 @@ include "header.php";
 <div class="live">
 
 	<div class="star">
-          <span><h1 class="home_page_title">Live</h1></span>
+          <span><h1 class="home_page_title">LIVE</h1></span>
     </div>
 
+    <div class="container-fluid">
 	<div class="row">
 		
 		<?php if (have_posts()) : ?>
 	   	<?php query_posts('showposts=2'); ?>
 	   	<?php while (have_posts()) : the_post(); ?>
 		   	<div class="col-md-3 col-md-offset-1">
-			   	<a href="<?php echo get_permalink(); ?>">
-			   		<?php the_post_thumbnail('full', array("class" => "img-responsive roundedbig")); ?>
-			   	</a>
-			    <h3 class="titre_vert text-center"><?php the_title(); ?></h3>
-			    <div class="corps_gris text-justify"><?php the_excerpt(); ?></div>
+		   		<div class="whiteground">
+				   	<a href="<?php echo get_permalink(); ?>">
+				   		<?php the_post_thumbnail('full', array("class" => "img-responsive roundedbig")); ?>
+				   	</a>
+				    <h3 class="titre_vert text-center"><?php the_title(); ?></h3>
+				    <div class="corps_gris text-justify"><?php the_excerpt(); ?></div>
+			    </div>
 		    </div>
 		<?php endwhile; ?>
 		<?php wp_reset_query(); ?>
@@ -186,7 +272,7 @@ include "header.php";
 		</div>
 
 	</div>	<!-- fin class row -->
-
+	</div>
 </div> <!-- fin class live -->
 
 
@@ -195,7 +281,7 @@ include "header.php";
 <div class="partenaires">
 	
 	<div class="star">
-          <span><h1 class="home_page_title">Nos partenaires</h1></span>
+          <span><h1 class="home_page_title">NOS PARTENAIRES</h1></span>
     </div>
 
 	

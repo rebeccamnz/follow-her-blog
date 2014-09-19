@@ -27,7 +27,7 @@
 		         </ul>
 		    </div>
 		    <div class="col-md-6"> 
-		    	<p class="copyright"> 2014 © Follow'Her | All right reserved </p> 
+		    	<p class="copyright"> 2014 © FOLLOW'HER | ALL RIGHTS RESERVED| PROJET.FOLLOWHER@GMAIL.COM </p> 
 		    </div>
 		</div>
 	</div>

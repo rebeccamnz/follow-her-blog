@@ -4,7 +4,7 @@
 
 <div class="article">
 
-	<h1 class="home_page_title"><?php the_category(); ?></h1>
+	<h2 class="home_page_title"><?php the_category(); ?></h2>
 
 	<div class="row">
 		<?php if (have_posts()) : ?>
@@ -15,7 +15,7 @@
 			    </div>
 			</div>
 			<div class="col-md-3">
-				<h2 class="articletitle"><?php the_title(); ?></h2>
+				<h1 class="articletitle"><?php the_title(); ?></h1>
 				<div class="date"><?php the_date(); ?></div>
 			</div>
 		

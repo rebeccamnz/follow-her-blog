@@ -73,6 +73,23 @@ nav ul {list-style-type: none;}
 
   }
 
+  .squared {
+  	width: 370px;
+	display: block;
+	border: 2px solid black;
+	margin: auto;
+	opacity: 1;
+  }
+
+  .squared:hover {
+  opacity: 0.5;
+  -webkit-transition: all 0.5s ease-out;
+	  -moz-transition: all 0.5s ease-out;
+	  -o-transition: all 0.5s ease-out;
+	  transition: all 0.5s ease-out;
+
+  }
+
 .roundedbig {
 	width: 150px;
 	display: block;
@@ -98,7 +115,7 @@ nav ul {list-style-type: none;}
 /***********************************************/
 
 header {
-	font-weight: bold;
+	/*font-weight: bold;*/
 	clear:both;
 	position:fixed;
 	top:0;
@@ -241,13 +258,13 @@ header {
 
 .navbar li {
 	color: #F3F4F3; 
-	font-size: 18px;
+	font-size: 30px;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 @media (max-width:870px) {
 	.navbar li{
-		font-size: 12px;
+		font-size: 14px;
 	}
 }
 
@@ -275,7 +292,7 @@ header {
 
 
 .navbar-transparent .navbar-nav > li > a:hover{
-	font-size: 22px;
+	font-size: 30px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	/*font-weight: bold;*/
 	background-color: RGB(240,237,229);
@@ -310,7 +327,7 @@ header {
 {
 	background-color: RGB(240,237,229);
 	color: #88D8C5; 
-	font-size: 22px;
+	font-size: 30px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	/*font-weight: bold;*/	
 }	
@@ -323,7 +340,7 @@ header {
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
 	background-color: rgb(240,237,229);
 	color: #88D8C5; 
-	font-size: 22px;
+	font-size: 30px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	/*font-weight: bold;*/	
 }
@@ -523,6 +540,16 @@ text-decoration: underline;
 	
 width: 100%;
 margin: auto;
+
+/*background-color: RGBA(243,244,243,0.4);
+width: 100%;
+margin: auto;
+background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	border-radius: 5px; */
+
+}
 }
 
 .our_video {
@@ -584,13 +611,13 @@ padding-left: 0px;
 	margin-top: 30px;
 }
 
-.intro{
+/*.intro{
 	font-family: 'Amatic SC', cursive;
 	font-size: 24px;
 	color: #454545;
 	text-align: center;
 
-}
+}*/
 
 .titre_vert{
 	font-family: 'Amatic SC', cursive;
@@ -624,10 +651,10 @@ padding-left: 0px;
 }
 
 .prenom_vert{
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 22px;
 	color: #88D8C5;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	text-align: center;
 }
 .prenom_gris{
@@ -689,26 +716,27 @@ padding-left: 0px;
   }
 }
 
-
-
+.col-md-3.parent2 {
+padding: 0px;
+margin: 0px 15px;
+}
 
 .parent2 {
-	width: 80px;
-	border-radius: 50%;
+	width: 360px;
+	/*border-radius: 5%;*/
 	overflow: hidden;
-	margin: auto;
 	position: relative;
 }
 .hidden_message2{
 	/* display:none; */
 	opacity: 0;
 	position: absolute;
-	height: 100%;
-	border-radius: 50%;
+	width: 360px;
+	/*height: 100%;*/
+	/*border-radius: 50%;*/
 	margin:auto;
 	top: 0;
 	left: 0;
-	width: 100%;
 	color: white;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: bold;
@@ -722,17 +750,20 @@ padding-left: 0px;
 .hidden_message2 p {
 	margin-top: 28px;
 	text-align: center;
-	font-weight: bold;
+	/*font-weight: bold;*/
 }
 
 .parent2:hover .hidden_message2{
 	/* display: block; */
 	background-color:#F6B025;
-	opacity: 1;
+	opacity: 0.8;
+	width:360px;
 }
 
 .aside_right {/*float:right;*/}
 .aside_left{/*float:left;*/}
+
+.portrait {margin-bottom:20px;}
 
 
 /* live ***************************************/
@@ -783,9 +814,9 @@ background-size: cover;
 .copyright
 	{
 	color : RGB(240,237,229);
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 16px;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	text-align: center; 
 	margin: auto;
 }
@@ -1000,7 +1031,7 @@ background-size: cover;
   }
 
 .articletitle {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 40px;
 	font-weight: bold;
 	text-align: left;
@@ -1010,7 +1041,7 @@ background-size: cover;
 
 
 .date {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 20px;
 	font-weight: bold;
 	text-align: left;
@@ -1045,6 +1076,17 @@ background-size: cover;
 	color: #88D8C5;
 	text-align: justify;
 	text-decoration: underline;
+}
+
+.whiteground {
+	background-color: RGBA(243,244,243,0.4);
+width: 100%;
+margin: auto;
+background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	border-radius: 5px;
+
 }
 
 /*********************************
@@ -1134,6 +1176,8 @@ background-size: cover;
 /*********************************
 *************** 404 *************
 ************************/
+
+.index_home {margin-top:80px;}
 
 
 .error{
