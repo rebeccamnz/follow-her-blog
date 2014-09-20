@@ -3,6 +3,8 @@
 
   <div class="archivefh">
 
+  		<h2 class="home_page_title">Résultats de la recherche</h2>
+
         <div class="row">
            <?php if (have_posts()) : ?>
 	   	<?php while (have_posts()) : the_post(); ?>

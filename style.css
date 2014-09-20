@@ -25,8 +25,8 @@ a {
 body {
   margin: 0;
   padding: 0;
-  background-image: url('images/leather.png');
-  overflow-x: hidden;
+  /*background-image: url('images/leather.png');
+  overflow-x: hidden;*/
 }
 
 div {
@@ -540,17 +540,15 @@ text-decoration: underline;
 	
 width: 100%;
 margin: auto;
-
-/*background-color: RGBA(243,244,243,0.4);
+padding: 60px;
+background-color: RGB(243,244,243);
 width: 100%;
 margin: auto;
 background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	border-radius: 5px; */
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
 
-}
-}
 
 .our_video {
 	padding-top: 30px;
@@ -572,13 +570,14 @@ background-size: cover;
 }
 */
 
-/* .equipe_followher
-{background-image: url('images/tele.jpeg');
+.equipe_followher
+{
+background-color: white;
 background-attachment: fixed;
 background-repeat: none;
 background-position: 0 0;
 background-size: cover;
-} */
+} 
 
 
 .image_background {
@@ -598,7 +597,17 @@ background-size: cover;
 
 
 
+.promotion p {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+}
 
+.promotion {
+	border: 2px solid black;
+	margin: 0px 15px;
+	width: 370px;
+	display: block;
+}
 
 .passion{list-style-type: none;
 margin-top: 10px;
@@ -670,6 +679,7 @@ padding-left: 0px;
 	font-size: 20px;
 	color: #454545;
 	text-align: justify;
+	padding:20px;
 }
 
 .more {
@@ -763,7 +773,7 @@ margin: 0px 15px;
 .aside_right {/*float:right;*/}
 .aside_left{/*float:left;*/}
 
-.portrait {margin-bottom:20px;}
+.portrait {margin:10px 70px;}
 
 
 /* live ***************************************/
@@ -780,6 +790,7 @@ margin: auto;
 background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	padding-bottom: 40px;
 
 }
 
@@ -1079,7 +1090,7 @@ background-size: cover;
 }
 
 .whiteground {
-	background-color: RGBA(243,244,243,0.4);
+	background-color: RGBA(243,244,243,0.6);
 width: 100%;
 margin: auto;
 background-size: cover;
@@ -1139,6 +1150,11 @@ background-size: cover;
 	border: 1px solid #F6B025;
 	background-color: white;
 }
+
+.comment-notes {display:none;}
+.comment-form-author {display:none;}
+.comment-form-url {display:none;}
+.comment-form-email {display:none;}
 
 /*********************************
 *************** Sidebar *************

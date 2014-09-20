@@ -55,6 +55,18 @@ if ( post_password_required() )
 
   <?php endif; // have_comments() ?>
 
-  <?php comment_form(); ?>
+
+  <?php comment_form(array(
+  'id_form'           => 'commentform',
+  'id_submit'         => 'submit',
+  'title_reply'       => __( 'Laisser un commentaire' ),
+  'title_reply_to'    => __( 'Leave a Reply to %s' ),
+  'cancel_reply_link' => __( 'Cancel Reply' ),
+  'label_submit'      => __( 'OK' ),
+  'comment_notes_after' => false,
+  'logged_in_as' => false,
+  )
+  ); ?>
+
 
 </div><!-- #comments .comments-area -->

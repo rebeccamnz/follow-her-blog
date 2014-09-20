@@ -24,10 +24,10 @@
 
 	
 
-
+	<div class="container-fluid ">
 	<div class="equipe_followher">
 
-	<div class="container-fluid ">
+
 
 		<div class="star">
           <span><h1 class="home_page_title">QUI EST FOLLOW'HER ?</h1></span>
@@ -48,7 +48,7 @@
 
 
         	<div class="col-md-3 parent2">
-				<img class=" squared img-responsive"src="<?php bloginfo('template_directory'); ?>/images/juliette.jpg" alt="Juliette Follow'Her"/>
+				<img class="squared img-responsive"src="<?php bloginfo('template_directory'); ?>/images/juliette.jpg" alt="Juliette Follow'Her"/>
 				<div class="hidden_message2">
 					<p>
 					Juliette est ............
@@ -57,7 +57,7 @@
 			</div>	
 
 			<div class="col-md-3 parent2">
-				<img class=" squared img-responsive"src="<?php bloginfo('template_directory'); ?>/images/emmanuelle.jpg" alt="Emmanuelle Follow'Her"/>
+				<img class="squared img-responsive"src="<?php bloginfo('template_directory'); ?>/images/emmanuelle.jpg" alt="Emmanuelle Follow'Her"/>
 				<div class="hidden_message2">
 					<p>
 					Emmanuelle est ............
@@ -67,9 +67,9 @@
 
         </div> <!-- fin class row avec les 3 -->
 
-        <div class="row">
+        <div class="row portrait">
 
-        	<div class="col-md-3 col-md-offset-3 parent2">
+        	<div class="col-md-3 col-md-offset-1 parent2">
 				<img class=" squared img-responsive"src="<?php bloginfo('template_directory'); ?>/images/rebecca.jpg" alt="Rebecca Follow'Her"/>
 				<div class="hidden_message2">
 					<p>
@@ -85,6 +85,10 @@
 					Charlotte est ............
 					</p>
 				</div>
+			</div>	
+
+			<div class="col-md-3 promotion parent2">
+				<p>« Nous ne cherchons pas à promouvoir un modèle unique d’émancipation par la réussite professionnelle, indépendamment du souhait des femmes concernées. Nous souhaitons en revanche que ces dernières puissent appréhender l’éventail de possibilités qui s’offrent à elles, et pensons que les NTIC peuvent y contribuer en rendant visible leur participation à l’effort de développement, et en accélérant ainsi l’évolution de la condition des femmes. »</p>
 			</div>	
 
 			
@@ -253,7 +257,7 @@
 		<?php if (have_posts()) : ?>
 	   	<?php query_posts('showposts=2'); ?>
 	   	<?php while (have_posts()) : the_post(); ?>
-		   	<div class="col-md-3 col-md-offset-1">
+		   	<div class="col-md-4">
 		   		<div class="whiteground">
 				   	<a href="<?php echo get_permalink(); ?>">
 				   		<?php the_post_thumbnail('full', array("class" => "img-responsive roundedbig")); ?>
@@ -288,28 +292,28 @@
 	
 	<div class="row center-block logopart">
 		<div class="col-md-3">
-			<a href="http://galeriekeza.com" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/keza.jpg" alt="Galerie Keza" class="rounded"> </a>
+			<a href="http://galeriekeza.com" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/keza.jpg" alt="Galerie Keza" class="roundedbig"> </a>
 		</div>
 		<div class="col-md-3">
-			<a href="http://www.scheffer.fr/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/scheffer.gif" alt="Scheffer" class="rounded"> </a>
+			<a href="http://www.scheffer.fr/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/scheffer.gif" alt="Scheffer" class="roundedbig"> </a>
 		</div>
 		<div class="col-md-3">
-			<a href="http://www.ampion.org" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/ampion.jpg" alt="Ampion" class="rounded"> </a>
+			<a href="http://www.ampion.org" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/ampion.jpg" alt="Ampion" class="roundedbig"> </a>
 		</div>
 		<div class="col-md-3">
-			<a href="http://www.passerellesnumeriques.org/"target="_blank"> <img src="<?php bloginfo('template_directory'); ?>/images/pn.png" alt="Passerelles_Numeriques" class="rounded"> </a>
+			<a href="http://www.passerellesnumeriques.org/"target="_blank"> <img src="<?php bloginfo('template_directory'); ?>/images/pn.png" alt="Passerelles_Numeriques" class="roundedbig"> </a>
 		</div>
 	</div>
 	
 	<div class="row logopart">
 		<div class="col-md-4">
-			<a href="http://www.sterio.me/" target="_blank"> <img src="<?php bloginfo('template_directory'); ?>/images/steriome.png" alt="steriome" class="rounded"> </a>
+			<a href="http://www.sterio.me/" target="_blank"> <img src="<?php bloginfo('template_directory'); ?>/images/steriome.png" alt="steriome" class="roundedbig"> </a>
 		</div>
 		<div class="col-md-4">
-			<a href="http://buffalogrid.org/" target="_blank"> <img src="<?php bloginfo('template_directory'); ?>/images/buffalogrid.png" alt="Buffalo_Grid" class="rounded"> </a>
+			<a href="http://buffalogrid.org/" target="_blank"> <img src="<?php bloginfo('template_directory'); ?>/images/buffalogrid.png" alt="Buffalo_Grid" class="roundedbig"> </a>
 		</div>
 		<div class="col-md-4">
-			<a href="https://www.w4.org/fr/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/wwww.jpg" alt="W4" class="rounded"> </a>
+			<a href="https://www.w4.org/fr/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/wwww.jpg" alt="W4" class="roundedbig"> </a>
 		</div>
 	</div>
 			
