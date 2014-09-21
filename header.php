@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bootstrap/css/bootstrap.min.css">
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  	<link href='http://fonts.googleapis.com/css?family=Cedarville+Cursive' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- Leave those next 4 lines if you care about users using IE8 -->
@@ -69,8 +70,8 @@
       </div>
       <div class="col-lg-3 marg hidden-xs hidden-sm hidden-md">
           <ul class ="list-inline text-right orange_clair">
-              <li class="sousmenu"><a href="#" target="_blank"><i class="centre fa fa-map-marker white"></i></a></li>
-                  <!-- redirige vers une page Google Map où je me géolocalise-->
+              <li class="sousmenu"><a href="https://www.google.fr/maps/place/City+Hall/@48.856483,2.352414,12z/data=!4m2!3m1!1s0x47e671fdb38f5b8b:0xc0345272f10c1f6e" target="_blank"><i class="centre fa fa-map-marker white"></i></a></li>
+                  
               <li class="sousmenu"><a href="http://www.facebook.com/projet.followher" target="_blank"> <i class="fa fa-facebook"></i> </a> </li>
               <li class="sousmenu" data-uk-tooltip title="Twitter"><a href="https://twitter.com/projetfollowher" target="_blank"><i class="fa fa-twitter"></i></a></li>
               <li class="sousmenu"><a href=#> <i class="fa fa-envelope-o"></i> </a></li>

@@ -3,15 +3,19 @@
 
 
 	<div class="background_green">
-		<img  class="mobilewoman" src="<?php bloginfo('template_directory'); ?>/images/mobilewoman.jpg" />
+		<img  class="mobilewoman" src="<?php bloginfo('template_directory'); ?>/images/woman.jpg" />
 		<div class="mask"> </div>
-		<div class="logofine">
-			<img class="img-responsive loglog" src="<?php bloginfo('template_directory'); ?>/images/logo_nom.png" />
-		</div>
+			<div class="logofine">
+				<img class="img-responsive loglog" src="<?php bloginfo('template_directory'); ?>/images/logo_nom.png" />
+			</div>
 	</div>
 
 
 	<div class="video_followher logo_fh row"> 
+		<div class="star">
+          <span><h1 class="home_page_title">ACTION !</h1></span>
+        </div>
+
 		<div class="col-md-offset-3 col-md-6 our_video"> 
 			<iframe width="100%" height="315" src="http://www.youtube.com/embed/BKtrWU4zaaI?rel=0" frameborder="0" allowfullscreen>
 			</iframe>
@@ -79,7 +83,7 @@
 			</div>	
 
 			<div class="col-md-3  parent2">
-				<img class="squared img-responsive"src="<?php bloginfo('template_directory'); ?>/images/charlotte.jpg" alt="Rebecca Follow'Her"/>
+				<img class="squared img-responsive"src="<?php bloginfo('template_directory'); ?>/images/charlotte.jpg" alt="Charlotte Follow'Her"/>
 				<div class="hidden_message2">
 					<p>
 					Charlotte est ............
@@ -88,7 +92,10 @@
 			</div>	
 
 			<div class="col-md-3 promotion parent2">
-				<p>« Nous ne cherchons pas à promouvoir un modèle unique d’émancipation par la réussite professionnelle, indépendamment du souhait des femmes concernées. Nous souhaitons en revanche que ces dernières puissent appréhender l’éventail de possibilités qui s’offrent à elles, et pensons que les NTIC peuvent y contribuer en rendant visible leur participation à l’effort de développement, et en accélérant ainsi l’évolution de la condition des femmes. »</p>
+				<img class="squared img-responsive"src="<?php bloginfo('template_directory'); ?>/images/verdure.png" alt="Verdure Follow'Her"/>
+				<div class="hidden_message2">
+					<p>« Nous ne cherchons pas à promouvoir un modèle unique d’émancipation par la réussite professionnelle, indépendamment du souhait des femmes concernées. Nous souhaitons en revanche que ces dernières puissent appréhender l’éventail de possibilités qui s’offrent à elles, et pensons que les NTIC peuvent y contribuer en rendant visible leur participation à l’effort de développement, et en accélérant ainsi l’évolution de la condition des femmes. »</p>
+				</div>
 			</div>	
 
 			
