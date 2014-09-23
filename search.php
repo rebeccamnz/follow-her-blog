@@ -20,7 +20,7 @@
 
 	 	 <div class="col-md-offset-1 col-md-3">
 				<ul class="sidebar">
-	   			<?php dynamic_sidebar( 'Main Sidebar2' ); ?>
+	   			<?php dynamic_sidebar( 'Main Sidebar' ); ?>
 				</ul>
 		</div>
 

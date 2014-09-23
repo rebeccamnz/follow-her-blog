@@ -44,8 +44,10 @@
         	<div class="col-md-offset-1 col-md-3 parent2">
 				<img class="  squared img-responsive"src="<?php bloginfo('template_directory'); ?>/images/helene.jpg" alt="Hélène Follow'Her"/>
 				<div class="hidden_message2">
-					<p>
-					Hélène est ............
+					<div class="name">HELENE</div> 
+					<p>L’aventurière de la bande</p>
+					<p>Le coeur sur la main</p>
+					<p>et qui cherche toujours le mot juste
 					</p>
 				</div>
 			</div>
@@ -54,8 +56,11 @@
         	<div class="col-md-3 parent2">
 				<img class="squared img-responsive"src="<?php bloginfo('template_directory'); ?>/images/juliette.jpg" alt="Juliette Follow'Her"/>
 				<div class="hidden_message2">
+					<div class="name">JULIETTE</div> 
 					<p>
-					Juliette est ............
+					La créative de la bande</p>
+					<p>Minutieuse dans tout ce qu’elle fait</p>
+					<p>Elle aime vous tirer le portrait et manger de la moutarde  
 					</p>
 				</div>
 			</div>	
@@ -63,9 +68,11 @@
 			<div class="col-md-3 parent2">
 				<img class="squared img-responsive"src="<?php bloginfo('template_directory'); ?>/images/emmanuelle.jpg" alt="Emmanuelle Follow'Her"/>
 				<div class="hidden_message2">
+					<div class="name">EMMANUELLE</div> 
 					<p>
-					Emmanuelle est ............
-					</p>
+					L’écrivain de la bande</p>
+					<p>Un grain de folie rafraîchissant</p>
+					<p>Et un sens aiguisé du désordre</p>
 				</div>
 			</div>
 
@@ -76,8 +83,10 @@
         	<div class="col-md-3 col-md-offset-1 parent2">
 				<img class=" squared img-responsive"src="<?php bloginfo('template_directory'); ?>/images/rebecca.jpg" alt="Rebecca Follow'Her"/>
 				<div class="hidden_message2">
-					<p>
-					Rebecca est ............
+					<div class="name">REBECCA</div> 
+					<p>L'entrepreneuse de la bande </p>
+					<p>Geek en herbe (merci pour le site!)</p>
+					<p>Elle nous transmet son énergie et sa motivation
 					</p>
 				</div>
 			</div>	
@@ -85,8 +94,10 @@
 			<div class="col-md-3  parent2">
 				<img class="squared img-responsive"src="<?php bloginfo('template_directory'); ?>/images/charlotte.jpg" alt="Charlotte Follow'Her"/>
 				<div class="hidden_message2">
-					<p>
-					Charlotte est ............
+					<div class="name">CHARLOTTE</div> 
+					<p>Le coach de la bande</p>
+					<p>Pétillante, chaleureuse et rassurante</p>
+					<p>Comme le chocolat, son péché mignon
 					</p>
 				</div>
 			</div>	
@@ -269,7 +280,7 @@
 				   	<a href="<?php echo get_permalink(); ?>">
 				   		<?php the_post_thumbnail('full', array("class" => "img-responsive roundedbig")); ?>
 				   	</a>
-				    <h3 class="titre_vert text-center"><?php the_title(); ?></h3>
+				    <h3 class="titre_vert text-center"><a href="<?php echo get_permalink(); ?>" class="titre_vert"><?php the_title(); ?></a></h3>
 				    <div class="corps_gris text-justify"><?php the_excerpt(); ?></div>
 			    </div>
 		    </div>

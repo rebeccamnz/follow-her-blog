@@ -185,8 +185,8 @@ header {
 
 
 #welcome {
-	height: 140px;
-	width: 140px;
+	height: 110px;
+	width: 110px;
 	overflow: hidden;
 	border-radius: 50%;
 	margin: auto;
@@ -258,7 +258,7 @@ header {
 
 .navbar li {
 	color: #F3F4F3; 
-	font-size: 30px;
+	font-size: 26px;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -292,7 +292,7 @@ header {
 
 
 .navbar-transparent .navbar-nav > li > a:hover{
-	font-size: 30px;
+	font-size: 26px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	/*font-weight: bold;*/
 	background-color: RGB(240,237,229);
@@ -327,7 +327,7 @@ header {
 {
 	background-color: RGB(240,237,229);
 	color: #88D8C5; 
-	font-size: 30px;
+	font-size: 26px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	/*font-weight: bold;*/	
 }	
@@ -340,7 +340,7 @@ header {
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
 	background-color: rgb(240,237,229);
 	color: #88D8C5; 
-	font-size: 30px;
+	font-size: 26px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	/*font-weight: bold;*/	
 }
@@ -655,18 +655,30 @@ padding-left: 0px;
 }*/
 
 .titre_vert{
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 60px;
 	color: #88D8C5;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	padding-left: 20px;
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
+	text-align: center;
+
+}
+
+.titre_vert:hover{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 60px;
+	color: #88D8C5;
+	/*font-weight: bold;*/
+	padding-left: 20px;
+	/*margin-bottom: 30px;*/
+	text-decoration: underline;
 
 }
 
 
 .titre_vert2{
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 40px;
 	color: #88D8C5;
 	font-weight: bold;
@@ -676,10 +688,10 @@ padding-left: 0px;
 
 
 .titre_orange{
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 60px;
 	color: #F6B025;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	padding-left: 20px;
 	margin-bottom: 30px;
 
@@ -702,7 +714,7 @@ padding-left: 0px;
 
 .corps_gris {
 	font-family: 'Quicksand', sans-serif;
-	font-size: 20px;
+	font-size: 15px;
 	color: #454545;
 	text-align: justify;
 	padding:20px;
@@ -733,6 +745,18 @@ padding-left: 0px;
 .bordure_vert {
 	border: 3px solid #88D8C5;
 	border-radius:5px;
+	height:500px;
+}
+
+@media (max-width: 970px) {
+	.bordure_vert {height:300px;
+}
+}
+
+@media (max-width: 750px) {
+	.bordure_vert {height:300px;
+		margin-bottom: 30px;
+}
 }
 
 @media (max-width: 320px) {  /*small mobile*/
@@ -773,9 +797,8 @@ padding: 0px;
 	margin:auto;
 	top: 0;
 	left: 0;
-	color: white;
-	font-family: 'Quicksand', sans-serif;
-	font-weight: bold;
+	
+	/*font-weight: bold;*/
 	-webkit-transition: all 0.5s ease-out;
 	  -moz-transition: all 0.5s ease-out;
 	  -o-transition: all 0.5s ease-out;
@@ -786,14 +809,23 @@ padding: 0px;
 .hidden_message2 p {
 	margin-top: 28px;
 	text-align: center;
+	color: white;
+	font-family: 'Quicksand', sans-serif;
 	/*font-weight: bold;*/
 }
+
+.name {font-size: 28px;
+	margin-top: 28px;
+	text-align: center;
+	color: white;
+	font-family: 'Quicksand', sans-serif; }
 
 .parent2:hover .hidden_message2{
 	/* display: block; */
 	background-color:#88D8C5;
 	opacity: 1;
 	width:360px;
+	height:360px;
 }
 
 .aside_right {/*float:right;*/}
@@ -1044,8 +1076,8 @@ background-size: cover;
 
 .article .home_page_title ul li a{
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 50px;
-	font-weight: bold;
+	font-size: 62px;
+	/*font-weight: bold;*/
 	text-align: center;
 	color: #F6B025;
 	/* line-height: 100px;*/
@@ -1070,8 +1102,8 @@ background-size: cover;
 
 .articletitle {
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 40px;
-	font-weight: bold;
+	font-size: 62px;
+	/*font-weight: bold;*/
 	text-align: left;
 	color: #88D8C5;
 	line-height: 100px;
@@ -1081,14 +1113,14 @@ background-size: cover;
 .date {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 20px;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	text-align: left;
 	color: #F6B025;
 }
 
 .post-content{
 	font-family: 'Quicksand', sans-serif;
-	font-size: 20px;
+	font-size: 16px;
 	color: #454545;
 	text-align: justify;
 	margin-top: 50px;
@@ -1182,6 +1214,7 @@ background-size: cover;
 .comment-form-author {display:none;}
 .comment-form-url {display:none;}
 .comment-form-email {display:none;}
+.comment-subscription-form {display:none;}
 
 /*********************************
 *************** Sidebar *************
@@ -1254,3 +1287,5 @@ background-size: cover;
 	padding-top: 80px;
 	margin-right: 10px;
 }
+
+.padpad {margin-top: 30px}

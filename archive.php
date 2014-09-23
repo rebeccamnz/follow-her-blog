@@ -3,7 +3,7 @@
 
   <div class="archivefh">
 
-        <div class="row">
+        <div class="padpad row">
            <?php if (have_posts()) : ?>
 	   	<?php while (have_posts()) : the_post(); ?>
 		   	<div class="col-md-3 col-md-offset-1">
@@ -18,7 +18,7 @@
 
 	 	 <div class="col-md-offset-1 col-md-3">
 				<ul class="sidebar">
-	   			<?php dynamic_sidebar( 'Main Sidebar2' ); ?>
+	   			<?php dynamic_sidebar( 'Main Sidebar' ); ?>
 				</ul>
 		</div>
 
